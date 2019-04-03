@@ -1,0 +1,237 @@
+updated_at = "2019-04-04T00:00:00"
+
+# ONGEKI Vocal Collection 01
+
+[[songs]]
+  title = "STARTLINER"
+  reading = "すたーとらいなー"
+  [songs.composer]
+    name = "kz(livetune)"
+    reading = "けーぜっと"
+
+[[songs]]
+  title = "Perfect Shining!!"
+  reading = "ぱーふぇくとしゃいにんぐ"
+  [songs.composer]
+    name = "宮崎誠"
+    reading = "みやざきまこと"
+
+[[songs]]
+  title = "みんな Happy!!"
+  reading = "みんなはっぴー"
+  [songs.composer]
+    name = "ヒゲドライバー"
+    reading = "ひげどらいばー"
+
+[[songs]]
+  title = "Zest of Blue"
+  reading = "つぇすとおぶぶるー"
+  [songs.composer]
+    name = "上松範廉(Elements Garden)"
+    reading = "あげまつのりやす"
+
+# ONGEKI Vocal Collection 02
+
+[[songs]]
+  title = "本能的 Survivor"
+  reading = "ほんのうてきさばいばー"
+  [songs.composer]
+    name = "eba"
+    reading = "えば"
+
+[[songs]]
+  title = "Here We Go"
+  reading = "ひあうぃーごー"
+  [songs.composer]
+    name = "TeddyLoid"
+    reading = "てでぃろいど"
+
+[[songs]]
+  title = "P！P！P！P！がおー!!"
+  reading = "ぱぱぱぱがおー" # 未確定情報、歌詞発音から推定
+  [songs.composer]
+    name = "Tom-H@ck"
+    reading = "とむはっく"
+
+[[songs]]
+  title = "タテマエと本心の大乱闘"
+  reading = "たてまえとほんしんのだいらんとう"
+  [songs.composer]
+    name = "鯨井国家"
+    reading = "くじらいこっか" # 未確定情報
+
+# ONGEKI Vocal Collection 03
+
+[[songs]]
+  title = "Kiss Me Kiss"
+  reading = "きすみーきす"
+  [songs.composer]
+    name = "大畑拓也"
+    reading = "おおはたたくや"
+
+[[songs]]
+  title = "SWEET SHAKE!!"
+  reading = "すいーとしぇーく"
+  [songs.composer]
+    name = "佐藤純一(fhána)"
+    reading = "さとうじゅんいち"
+
+[[songs]]
+  title = "What color..."
+  reading = "わっとからー"
+  [songs.composer]
+    name = "NAOKI"
+    reading = "なおき"
+
+# ONGEKI Sound Collection 01
+
+[[songs]]
+  title = "Jump!! Jump!! Jump!!"
+  reading = "じゃんぷじゃんぷじゃんぷ"
+  [songs.composer]
+    name = "宮崎誠"
+    reading = "みやざきまこと"
+
+[[songs]]
+  title = "Dolphika"
+  reading = "どるふぃか"
+  [songs.composer]
+    name = "HiTECH NINJA"
+    reading = "はいてっくにんじゃ"
+
+[[songs]]
+  title = "Ai Nov"
+  reading = "あいのう"
+  [songs.composer]
+    name = "Feryquitous"
+    reading = "ふぇりきたす"
+
+[[songs]]
+  title = "ロッキンピンクモンスター"
+  reading = "ろっきんぴんくもんすたー"
+  [songs.composer]
+    name = "豚乙女"
+    reading = "ぶたおとめ"
+
+[[songs]]
+  title = "ブツメツビーターズ"
+  reading = "ぶつめつびーたーず"
+  [songs.composer]
+    name = "有形ランペイジ"
+    reading = "ゆうけいらんぺいじ"
+
+[[songs]]
+  title = "Sword of Secret"
+  reading = "そーどおぶしーくれっと"
+  [songs.composer]
+    name = "Cranky,Morrigan feat.Lily"
+    reading = "くらんきーもりがん" # 審議対象
+
+[[songs]]
+  title = "Maqrite"
+  reading = "まくりて"
+  [songs.composer]
+    name = "owl＊tree"
+    reading = "あうるつりー"
+
+[[songs]]
+  title = "Everlasting Today"
+  reading = "えばーらすてぃんぐとぅでい"
+  [songs.composer]
+    name = "void (Mournfinale)"
+    reading = "ゔぉいど"
+
+[[songs]]
+  title = "Dazzle hop"
+  reading = "だずるほっぷ"
+  [songs.composer]
+    name = "Sampling Masters MEGA"
+    reading = "さんぷりんぐますたーずめが"
+
+[[songs]]
+  title = "YURUSHITE"
+  reading = "ゆるして"
+  [songs.composer]
+    name = "t+pazolite"
+    reading = "とぱぞらいと"
+
+[[songs]]
+  title = "Opfer"
+  reading = "おぷふぁー"
+  [songs.composer]
+    name = "かねこちはる"
+    reading = "かねこちはる"
+
+[[songs]]
+  title = "Titania"
+  reading = "てぃたーにあ"
+  [songs.composer]
+    name = "xi"
+    reading = "さい"
+
+# オンゲキ(無印) 初出の CD 未収録分
+
+[[songs]]
+  title = "GAME IS LIFE"
+  reading = "げーむいずらいふ"
+  [songs.composer]
+    name = "ヒゲドライバー"
+    reading = "ひげどらいばー"
+
+[[songs]]
+  title = "GranFatalité"
+  reading = "ぐらんふぁたりて"
+  [songs.composer]
+    name = "ZAQ"
+    reading = "ザック"
+
+# オンゲキプラス 初出の CD 未収録分
+
+[[songs]]
+  title = "TAKE ON THE WORLD"
+  reading = "ていくおんざわーるど"
+  [songs.composer]
+    name = "REDALiCE"
+    reading = "れっどありす"
+
+[[songs]]
+  title = "TeA"
+  reading = "てぃー"
+  [songs.composer]
+    name = "ガリガリさむし"
+    reading = "がりがりさむし"
+
+[[songs]]
+  title = "fulgente"
+  reading = "ふるじぇんて"
+  [songs.composer]
+    name = "Junk"
+    reading = "じゃんく"
+
+[[songs]]
+  title = "MEGATON BLAST"
+  reading = "めがとんぶらすと"
+  [songs.composer]
+    name = "BlackY vs. Yooh"
+    reading = "ぶらっきーばーさすゆー" # 審議対象
+
+[[songs]]
+  title = "Death Doll"
+  reading = "ですどーる"
+  [songs.composer]
+    name = "SHIKI"
+    reading = "しき"
+
+[[songs]]
+  title = "Chelly spLash♪♪"
+  reading = "ちぇりーすぷらっしゅ"
+  [songs.composer]
+    name = "まらしぃ"
+    reading = "まらしぃ"
+
+[[songs]]
+  title = "オンゲキ全域★アカネサマ？"
+  reading = "おんげきぜんいきあかねさま"
+  [songs.composer]
+    name = "MOSAIC.WAV"
+    reading = "もざいくうぇぶ"
