@@ -2,7 +2,10 @@ use clap::{App, Arg, ArgMatches};
 use env_logger;
 use failure::Error;
 use log::info;
-use std::{fs::File, io::{Read, Write, stdout}};
+use std::{
+    fs::File,
+    io::{stdout, Read, Write},
+};
 use toml;
 
 use ongeki_data::{
@@ -75,6 +78,10 @@ fn run(matches: &ArgMatches) -> Result<(), Error> {
 
     let entries = generate_entries(&characters, &songs);
     let skk_entries = SkkDictionaryEntry::emit(&entries);
+
+    write!(output, ";; -*- fundamental -*- ; coding: utf-8 -*-\n")?;
+    write!(output, ";; okuri-ari entries.")?;
+    write!(output, ";; okuri-nasi entries.")?;
     for skk_entry in skk_entries.iter() {
         write!(output, "{:#}\n", skk_entry)?;
     }
