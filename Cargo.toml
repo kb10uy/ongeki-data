@@ -4,12 +4,28 @@ version = "0.1.0"
 authors = ["kb10uy <kb10uy@kb10uy.org>"]
 edition = "2018"
 
+[[bin]]
+name = "emit-skk-dictionary"
+path = "./src/bin/emit-skk-dictionary.rs"
+
 [lib]
 path = "./src/lib.rs"
+
+[dependencies.failure]
+version = "0.1.5"
+
+[dependencies.log]
+version = "0.4.6"
+
+[dependencies.env_logger]
+version = "0.6.1"
 
 [dependencies.serde]
 version = "1.0"
 features = ["derive"]
+
+[dependencies.toml]
+version = "0.4"
 
 [dependencies.chrono]
 version = "0.4.6"
