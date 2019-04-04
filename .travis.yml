@@ -2,7 +2,7 @@ language: rust
 rust:
   - stable
 cache: cargo
-scripts:
+script:
   - cargo build --verbose --all
   - cargo run --bin emit-skk-dictionary -- ./dist/SKK-JISYO.ongeki.utf8
 
