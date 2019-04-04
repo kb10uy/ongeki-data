@@ -1,8 +1,8 @@
+use clap::{App, Arg, ArgMatches};
 use env_logger;
 use failure::Error;
 use log::info;
-use std::fs::File;
-use std::io::Read;
+use std::{fs::File, io::{Read, Write, stdout}};
 use toml;
 
 use ongeki_data::{
@@ -12,13 +12,55 @@ use ongeki_data::{
 fn main() -> Result<(), Error> {
     env_logger::init();
 
+    let app = App::new("オンゲキ SKK 辞書生成ツール")
+        .version(env!("CARGO_PKG_VERSION"))
+        .author(env!("CARGO_PKG_AUTHORS"))
+        .about(
+            "TOML 形式の定義ファイルから SKK 用の辞書ファイルを生成します",
+        )
+        .arg(
+            Arg::with_name("OUTPUT")
+                .help("出力先")
+                .required(true)
+                .index(1)
+                .default_value("-"),
+        )
+        .arg(
+            Arg::with_name("character-definitions")
+                .short("c")
+                .long("characters")
+                .help("characters.toml の位置を指定")
+                .takes_value(true)
+                .value_name("FILE")
+                .default_value("./data/characters.toml"),
+        )
+        .arg(
+            Arg::with_name("song-definitions")
+                .short("s")
+                .long("songs")
+                .help("songs.toml の位置を指定")
+                .takes_value(true)
+                .value_name("FILE")
+                .default_value("./data/songs.toml"),
+        );
+    let matches = app.get_matches();
+
+    run(&matches)
+}
+
+fn run(matches: &ArgMatches) -> Result<(), Error> {
     let mut buffer = String::new();
-    let mut characters_file = File::open("./data/characters.toml")?;
-    let mut songs_file = File::open("./data/songs.toml")?;
+    let output_name = matches.value_of("OUTPUT").unwrap();
+    let mut characters_file = File::open(matches.value_of("character-definitions").unwrap())?;
+    let mut songs_file = File::open(matches.value_of("song-definitions").unwrap())?;
+    let mut output: Box<dyn Write> = if output_name == "-" {
+        Box::new(stdout())
+    } else {
+        Box::new(File::create(output_name)?)
+    };
 
     characters_file.read_to_string(&mut buffer)?;
     let characters: CharactersDefinition = toml::from_str(&buffer)?;
-
     songs_file.read_to_string(&mut buffer)?;
     let songs: SongsDefinition = toml::from_str(&buffer)?;
 
@@ -32,13 +74,9 @@ fn main() -> Result<(), Error> {
     info!("Songs: {}", songs.songs.len());
 
     let entries = generate_entries(&characters, &songs);
-    for entry in entries.iter() {
-        println!("{:#}", entry);
-    }
-
     let skk_entries = SkkDictionaryEntry::emit(&entries);
     for skk_entry in skk_entries.iter() {
-        println!("{:#}", skk_entry);
+        write!(output, "{:#}\n", skk_entry)?;
     }
 
     Ok(())
