@@ -1,7 +1,7 @@
 use std::collections::BTreeMap;
 use std::fmt;
 
-use crate::{DictionaryEntry, DictionaryEntryKind, EmitDictionary};
+use crate::dictionary::{DictionaryEntry, DictionaryEntryKind, EmitDictionary};
 
 pub struct SkkDictionaryEntry {
     pub reading: String,
