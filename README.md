@@ -14,7 +14,8 @@
 ## 機能
 
 ### 辞書生成
-IME の辞書を生成します。
+IME の辞書を生成します。 生成された辞書は Release ページからダウンロードできます。
 
 * SKK (`emit-skk-dictionary`)
 * ATOK (`emit-atok-dictionary`)
+* MS-IME (`emit-msime-dictionary`)

@@ -6,6 +6,7 @@ script:
   - cargo build --verbose --all
   - cargo run --bin emit-skk-dictionary -- ./dist/SKK-JISYO.ongeki.utf8
   - cargo run --bin emit-atok-dictionary -- ./dist/ongeki-atok.txt
+  - cargo run --bin emit-msime-dictionary -- ./dist/ongeki-msime.txt
 
 deploy:
   provider: releases
@@ -13,6 +14,7 @@ deploy:
   file:
     - ./dist/SKK-JISYO.ongeki.utf8
     - ./dist/ongeki-atok.txt
+    - ./dist/ongeki-msime.txt
   skip_cleanup: true
   on:
     tags: true
