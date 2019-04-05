@@ -3,6 +3,7 @@ use std::fmt;
 
 use crate::dictionary::{DictionaryEntry, DictionaryEntryKind, EmitDictionary};
 
+/// SKK 辞書エントリ
 pub struct SkkDictionaryEntry {
     pub reading: String,
     pub entries: Vec<(String, DictionaryEntryKind)>,

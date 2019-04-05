@@ -1,7 +1,11 @@
 mod data;
 mod dictionary;
 mod io;
-mod skk;
+mod ime {
+    pub mod atok;
+    pub mod skk;
+}
+
 
 pub use crate::{
     data::{Character, Composer, Song, Unit, VoiceActor},
@@ -9,5 +13,5 @@ pub use crate::{
     io::{
         load_character_definitions, load_song_definitions, CharactersDefinition, SongsDefinition,
     },
-    skk::SkkDictionaryEntry,
+    ime::{skk::SkkDictionaryEntry, atok::AtokDictionaryEntry},
 };

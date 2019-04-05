@@ -1,6 +1,6 @@
 [package]
 name = "ongeki-data"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["kb10uy <kb10uy@kb10uy.org>"]
 edition = "2018"
 
