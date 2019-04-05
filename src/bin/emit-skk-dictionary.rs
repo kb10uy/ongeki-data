@@ -4,13 +4,10 @@ use failure::Error;
 use log::info;
 use std::{
     fs::File,
-    io::{stdout, Read, Write},
+    io::{stdout, Write},
 };
-use toml;
 
-use ongeki_data::{
-    generate_entries, CharactersDefinition, EmitDictionary, SkkDictionaryEntry, SongsDefinition,
-};
+use ongeki_data::{EmitDictionary, SkkDictionaryEntry};
 
 fn main() -> Result<(), Error> {
     env_logger::init();
@@ -52,20 +49,17 @@ fn main() -> Result<(), Error> {
 }
 
 fn run(matches: &ArgMatches) -> Result<(), Error> {
-    let mut buffer = String::new();
     let output_name = matches.value_of("OUTPUT").unwrap();
-    let mut characters_file = File::open(matches.value_of("character-definitions").unwrap())?;
-    let mut songs_file = File::open(matches.value_of("song-definitions").unwrap())?;
     let mut output: Box<dyn Write> = if output_name == "-" {
         Box::new(stdout())
     } else {
         Box::new(File::create(output_name)?)
     };
 
-    characters_file.read_to_string(&mut buffer)?;
-    let characters: CharactersDefinition = toml::from_str(&buffer)?;
-    songs_file.read_to_string(&mut buffer)?;
-    let songs: SongsDefinition = toml::from_str(&buffer)?;
+    let characters = ongeki_data::load_character_definitions(
+        matches.value_of("character-definitions").unwrap(),
+    )?;
+    let songs = ongeki_data::load_song_definitions(matches.value_of("song-definitions").unwrap())?;
 
     info!(
         "Character definitions loaded (updated on {})",
@@ -76,7 +70,7 @@ fn run(matches: &ArgMatches) -> Result<(), Error> {
     info!("Song definitions loaded (updated on {})", songs.updated_at);
     info!("Songs: {}", songs.songs.len());
 
-    let entries = generate_entries(&characters, &songs);
+    let entries = ongeki_data::generate_entries(&characters, &songs);
     let skk_entries = SkkDictionaryEntry::emit(&entries);
 
     write!(output, ";; -*- fundamental -*- ; coding: utf-8 -*-\n")?;
