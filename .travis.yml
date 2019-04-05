@@ -5,12 +5,14 @@ cache: cargo
 script:
   - cargo build --verbose --all
   - cargo run --bin emit-skk-dictionary -- ./dist/SKK-JISYO.ongeki.utf8
+  - cargo run --bin emit-atok-dictionary -- ./dist/ongeki-atok.txt
 
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
   file:
     - ./dist/SKK-JISYO.ongeki.utf8
+    - ./dist/ongeki-atok.txt
   skip_cleanup: true
   on:
     tags: true

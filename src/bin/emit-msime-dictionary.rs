@@ -7,16 +7,16 @@ use std::{
     io::{stdout, Write},
 };
 
-use ongeki_data::{AtokDictionaryEntry, EmitDictionary};
+use ongeki_data::{EmitDictionary, MsimeDictionaryEntry};
 
 fn main() -> Result<(), Error> {
     env_logger::init();
 
-    let app = App::new("オンゲキ ATOK 辞書生成ツール")
+    let app = App::new("オンゲキ MS-IME 辞書生成ツール")
         .version(env!("CARGO_PKG_VERSION"))
         .author(env!("CARGO_PKG_AUTHORS"))
         .about(
-            "TOML 形式の定義ファイルから ATOK 用の辞書ファイルを生成します",
+            "TOML 形式の定義ファイルから MS-IME 用の辞書ファイルを生成します",
         )
         .arg(
             Arg::with_name("OUTPUT")
@@ -71,25 +71,25 @@ fn run(matches: &ArgMatches) -> Result<(), Error> {
     info!("Songs: {}", songs.songs.len());
 
     let entries = ongeki_data::generate_entries(&characters, &songs);
-    let atok_entries = AtokDictionaryEntry::emit(&entries);
+    let msime_entries = MsimeDictionaryEntry::emit(&entries);
 
     output.write_all(&[0xff, 0xfe])?;
-    ongeki_data::write_as_utf16(&mut output, &format!("!!ATOK_TANGO_TEXT_HEADER_1\n"))?;
+    ongeki_data::write_as_utf16(&mut output, &format!("!Microsoft IME Dictionary Tool 98\n"))?;
     ongeki_data::write_as_utf16(
         &mut output,
-        &format!("!!--------------------------------\n"),
+        &format!("!--------------------------------\n"),
     )?;
     ongeki_data::write_as_utf16(
         &mut output,
-        &format!("!! characters: {}\n", characters.updated_at),
+        &format!("! characters: {}\n", characters.updated_at),
     )?;
-    ongeki_data::write_as_utf16(&mut output, &format!("!! songs: {}\n", songs.updated_at))?;
+    ongeki_data::write_as_utf16(&mut output, &format!("! songs: {}\n", songs.updated_at))?;
     ongeki_data::write_as_utf16(
         &mut output,
-        &format!("!!--------------------------------\n"),
+        &format!("!--------------------------------\n"),
     )?;
-    for atok_entry in atok_entries.iter() {
-        ongeki_data::write_as_utf16(&mut output, &format!("{:#}\n", atok_entry))?;
+    for msime_entry in msime_entries.iter() {
+        ongeki_data::write_as_utf16(&mut output, &format!("{:#}\n", msime_entry))?;
     }
 
     Ok(())

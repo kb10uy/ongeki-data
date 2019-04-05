@@ -17,3 +17,4 @@
 IME の辞書を生成します。
 
 * SKK (`emit-skk-dictionary`)
+* ATOK (`emit-atok-dictionary`)

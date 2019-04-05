@@ -12,6 +12,10 @@ path = "./src/bin/emit-skk-dictionary.rs"
 name = "emit-atok-dictionary"
 path = "./src/bin/emit-atok-dictionary.rs"
 
+[[bin]]
+name = "emit-msime-dictionary"
+path = "./src/bin/emit-msime-dictionary.rs"
+
 [lib]
 path = "./src/lib.rs"
 

@@ -1,5 +1,5 @@
 use std::fs::File;
-use std::io::Read;
+use std::io::{Read, Write};
 use failure::Error;
 use serde::Deserialize;
 use toml;
@@ -40,4 +40,12 @@ pub fn load_song_definitions(path: &str) -> Result<SongsDefinition, Error> {
 
     let result: SongsDefinition = toml::from_str(&buffer)?;
     Ok(result)
+}
+
+/// UTF-16 文字列として書き込む
+pub fn write_as_utf16(w: &mut impl Write, text: &str) -> Result<(), Error> {
+    for code in text.encode_utf16() {
+        w.write(&[(code & 0xff) as u8, (code >> 8) as u8])?;
+    }
+    Ok(())
 }
