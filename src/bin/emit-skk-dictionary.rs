@@ -74,8 +74,8 @@ fn run(matches: &ArgMatches) -> Result<(), Error> {
     let skk_entries = SkkDictionaryEntry::emit(&entries);
 
     write!(output, ";; -*- fundamental -*- ; coding: utf-8 -*-\n")?;
-    write!(output, ";; okuri-ari entries.")?;
-    write!(output, ";; okuri-nasi entries.")?;
+    write!(output, ";; okuri-ari entries.\n")?;
+    write!(output, ";; okuri-nasi entries.\n")?;
     for skk_entry in skk_entries.iter() {
         write!(output, "{:#}\n", skk_entry)?;
     }
