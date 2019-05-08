@@ -1,0 +1,74 @@
+updated_at = "2019-05-08T15:00:00"
+
+[[sections]]
+  number = 1
+
+  [[sections.chapters]]
+    number = 1
+    title = "目指せ！いっぱいのエール！"
+    reading = "めざせいっぱいのえーる"
+
+  [[sections.chapters]]
+    number = 2
+    title = "自称・超絶最強、登場！"
+    reading = "じしょうちょうぜつさいきょうとうじょう"
+
+  [[sections.chapters]]
+    number = 3
+    title = "嘘とがおー！とかたき討ち"
+    reading = "うそとがおーとかたきうち"
+
+  [[sections.chapters]]
+    number = 4
+    title = "カフェ de スクランブル"
+    reading = "かふぇですくらんぶる"
+
+  [[sections.chapters]]
+    number = 5
+    title = "ハルちゃん印のお弁当"
+    reading = "はるちゃんじるしのおべんとう"
+
+  [[sections.chapters]]
+    number = 6
+    title = "波乱！副会長の通告"
+    reading = "はらんふくかいちょうのつうこく"
+
+  [[sections.chapters]]
+    number = 7
+    title = "小星と咲姫があらわれた！"
+    reading = "こぼしとさきがあらわれた"
+
+  [[sections.chapters]]
+    number = 8
+    title = "世界征服のお誘い"
+    reading = "せかいせいふくのおさそい"
+
+  [[sections.chapters]]
+    number = 9
+    title = "黒幕はぬいぐるみ？"
+    reading = "くろまくはぬいぐるみ"
+
+
+[[sections]]
+  number = 2
+
+  [[sections.chapters]]
+    number = 1
+    title = "わくわくバイト・ミッション"
+    reading = "わくわくばいとみっしょん"
+
+  [[sections.chapters]]
+    number = 2
+    title = "ゲーセン☆チャンス！？"
+    reading = "げーせんちゃんす"
+
+  [[sections.chapters]]
+    number = 3
+    title = "妄想×動揺×大暴走"
+    reading = "もうそうどうようだいぼうそう"
+
+  [[sections.chapters]]
+    number = 4
+    title = "おかえりなさいませ！ご主人さま♪"
+    reading = "おかえりなさいませごしゅじんさま"
+
