@@ -12,7 +12,7 @@ pub use crate::{
     dictionary::{generate_entries, DictionaryEntry, DictionaryEntryKind, EmitDictionary},
     ime::{atok::AtokDictionaryEntry, msime::MsimeDictionaryEntry, skk::SkkDictionaryEntry},
     io::{
-        load_character_definitions, load_song_definitions, write_as_utf16, CharactersDefinition,
-        SongsDefinition,
+        load_character_definitions, load_general_definitions, load_song_definitions,
+        write_as_utf16, CharactersDefinition, SongsDefinition,
     },
 };

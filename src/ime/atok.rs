@@ -21,7 +21,7 @@ impl EmitDictionary for AtokDictionaryEntry {
                     | DictionaryEntryKind::VoiceActor
                     | DictionaryEntryKind::Composer => "固有人他",
                     DictionaryEntryKind::Unit => "固有組織",
-                    DictionaryEntryKind::Song => "固有一般",
+                    DictionaryEntryKind::Song | DictionaryEntryKind::Chapter(_, _) => "固有一般",
                 }
                 .to_owned(),
             });

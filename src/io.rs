@@ -4,7 +4,7 @@ use failure::Error;
 use serde::Deserialize;
 use toml;
 
-use crate::data::{Character, Unit, Song};
+use crate::data::{Character, Unit, Song, Section};
 
 /// キャラクター・ユニットの定義ファイル (characters.toml)
 #[derive(Deserialize)]
@@ -19,6 +19,13 @@ pub struct CharactersDefinition {
 pub struct SongsDefinition {
     pub updated_at: String,
     pub songs: Vec<Song>,
+}
+
+/// 汎用の定義ファイル (general.toml)
+#[derive(Deserialize)]
+pub struct GeneralDefinition {
+    pub updated_at: String,
+    pub sections: Vec<Section>,
 }
 
 
@@ -39,6 +46,16 @@ pub fn load_song_definitions(path: &str) -> Result<SongsDefinition, Error> {
     file.read_to_string(&mut buffer)?;
 
     let result: SongsDefinition = toml::from_str(&buffer)?;
+    Ok(result)
+}
+
+/// 指定されたパスのファイルから楽曲定義を読み込む
+pub fn load_general_definitions(path: &str) -> Result<GeneralDefinition, Error> {
+    let mut file = File::open(path)?;
+    let mut buffer = String::new();
+    file.read_to_string(&mut buffer)?;
+
+    let result: GeneralDefinition = toml::from_str(&buffer)?;
     Ok(result)
 }
 

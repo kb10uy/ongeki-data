@@ -51,3 +51,23 @@ pub struct Song {
     /// アーティスト
     pub composer: Composer,
 }
+
+/// チャプター
+#[derive(Deserialize)]
+pub struct Chapter {
+    /// チャプター番号
+    pub number: i32,
+    ///  タイトル
+    pub title: String,
+    /// 読み
+    pub reading: String,
+}
+
+/// 章
+#[derive(Deserialize)]
+pub struct Section {
+    /// 章番号
+    pub number: i32,
+    /// チャプター
+    pub chapters: Vec<Chapter>,
+}

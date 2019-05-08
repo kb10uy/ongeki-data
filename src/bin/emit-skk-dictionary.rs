@@ -42,6 +42,15 @@ fn main() -> Result<(), Error> {
                 .takes_value(true)
                 .value_name("FILE")
                 .default_value("./data/songs.toml"),
+        )
+        .arg(
+            Arg::with_name("general-definitions")
+                .short("g")
+                .long("general")
+                .help("general.toml の位置を指定")
+                .takes_value(true)
+                .value_name("FILE")
+                .default_value("./data/general.toml"),
         );
     let matches = app.get_matches();
 
@@ -56,11 +65,18 @@ fn run(matches: &ArgMatches) -> Result<(), Error> {
         Box::new(File::create(output_name)?)
     };
 
+    let generals =
+        ongeki_data::load_general_definitions(matches.value_of("general-definitions").unwrap())?;
     let characters = ongeki_data::load_character_definitions(
         matches.value_of("character-definitions").unwrap(),
     )?;
     let songs = ongeki_data::load_song_definitions(matches.value_of("song-definitions").unwrap())?;
 
+    info!(
+        "General definitions loaded (updated on {}",
+        generals.updated_at
+    );
+    info!("Sections: {}", generals.sections.len());
     info!(
         "Character definitions loaded (updated on {})",
         characters.updated_at
@@ -70,7 +86,7 @@ fn run(matches: &ArgMatches) -> Result<(), Error> {
     info!("Song definitions loaded (updated on {})", songs.updated_at);
     info!("Songs: {}", songs.songs.len());
 
-    let entries = ongeki_data::generate_entries(&characters, &songs);
+    let entries = ongeki_data::generate_entries(&generals, &characters, &songs);
     let skk_entries = SkkDictionaryEntry::emit(&entries);
 
     write!(output, ";; -*- fundamental -*- ; coding: utf-8 -*-\n")?;

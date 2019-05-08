@@ -1,11 +1,13 @@
 use std::fmt;
 
-use crate::io::{CharactersDefinition, SongsDefinition};
+use crate::io::{CharactersDefinition, SongsDefinition, GeneralDefinition};
 
 // TODO: これ直接格納してもいいのでは?
 /// 辞書エントリの種類
 #[derive(Debug, Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
 pub enum DictionaryEntryKind {
+    /// チャプター
+    Chapter(i32, i32),
     /// キャラクター
     Character,
     /// 声優
@@ -46,10 +48,21 @@ where
 
 /// 抽象的な辞書エントリを生成する
 pub fn generate_entries(
+    generals: &GeneralDefinition,
     characters: &CharactersDefinition,
     songs: &SongsDefinition,
 ) -> Vec<DictionaryEntry> {
     let mut result = vec![];
+
+    for section in generals.sections.iter() {
+        for chapter in section.chapters.iter() {
+            result.push(DictionaryEntry {
+                kind: DictionaryEntryKind::Chapter(section.number, chapter.number),
+                entry: chapter.title.to_owned(),
+                reading: chapter.reading.to_owned(),
+            });
+        }
+    }
 
     // キャラクター名
     for character in characters.characters.iter() {
