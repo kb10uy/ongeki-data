@@ -1,4 +1,4 @@
-updated_at = "2019-04-04T00:00:00"
+updated_at = "2019-05-08T15:00:00"
 
 # ONGEKI Vocal Collection 01
 
@@ -235,3 +235,25 @@ updated_at = "2019-04-04T00:00:00"
   [songs.composer]
     name = "MOSAIC.WAV"
     reading = "もざいくうぇぶ"
+
+[[songs]]
+  title = "めんどーい！やっほーい！ともだち！"
+  reading = "めんどーいやっほーいともだち"
+  [songs.composer]
+    name = "前山田健一"
+    reading = "まえやまだけんいち"
+
+[[songs]]
+  title = "BOUNCE & DANCE"
+  reading = "ばうんすあんどだんす"
+  [songs.composer]
+    name = "IOSYS TRAX"
+    reading = "いおしすとらっくす"
+
+[[songs]]
+  title = "心"
+  reading = "こころ"
+  [songs.composer]
+    name = "削除 (Violin: Katali)"
+    reading = "さくじょ" # 審議対象
+
