@@ -83,6 +83,29 @@ updated_at = "2019-05-08T15:00:00"
     name = "NAOKI"
     reading = "なおき"
 
+# ONGEKI Vocal Collection 04
+
+[[songs]]
+  title = "めんどーい！やっほーい！ともだち！"
+  reading = "めんどーいやっほーいともだち"
+  [songs.composer]
+    name = "前山田健一"
+    reading = "まえやまだけんいち"
+
+[[songs]]
+  title = "GAME IS LIFE"
+  reading = "げーむいずらいふ"
+  [songs.composer]
+    name = "ヒゲドライバー"
+    reading = "ひげどらいばー"
+
+[[songs]]
+  title = "GranFatalité"
+  reading = "ぐらんふぁたりて"
+  [songs.composer]
+    name = "ZAQ"
+    reading = "ざっく"
+
 # ONGEKI Sound Collection 01
 
 [[songs]]
@@ -169,22 +192,6 @@ updated_at = "2019-05-08T15:00:00"
     name = "xi"
     reading = "さい"
 
-# オンゲキ(無印) 初出の CD 未収録分
-
-[[songs]]
-  title = "GAME IS LIFE"
-  reading = "げーむいずらいふ"
-  [songs.composer]
-    name = "ヒゲドライバー"
-    reading = "ひげどらいばー"
-
-[[songs]]
-  title = "GranFatalité"
-  reading = "ぐらんふぁたりて"
-  [songs.composer]
-    name = "ZAQ"
-    reading = "ざっく"
-
 # オンゲキプラス 初出の CD 未収録分
 
 [[songs]]
@@ -237,13 +244,6 @@ updated_at = "2019-05-08T15:00:00"
     reading = "もざいくうぇぶ"
 
 [[songs]]
-  title = "めんどーい！やっほーい！ともだち！"
-  reading = "めんどーいやっほーいともだち"
-  [songs.composer]
-    name = "前山田健一"
-    reading = "まえやまだけんいち"
-
-[[songs]]
   title = "BOUNCE & DANCE"
   reading = "ばうんすあんどだんす"
   [songs.composer]
@@ -257,3 +257,10 @@ updated_at = "2019-05-08T15:00:00"
     name = "削除 (Violin: Katali)"
     reading = "さくじょ" # 審議対象
 
+# オンゲキ LIVE vol.1
+# [[songs]]
+#   title = "Starring Stars"
+#   reading = "すたーりんぐすたーず"
+#   [song.composer]
+#     name = ""
+#     reading = ""
