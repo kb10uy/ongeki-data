@@ -72,3 +72,8 @@ updated_at = "2019-05-08T15:00:00"
     title = "おかえりなさいませ！ご主人さま♪"
     reading = "おかえりなさいませごしゅじんさま"
 
+  [[sections.chapters]]
+    number = 5
+    title = "ドタバタ子守り大作戦"
+    reading = "どたばたこもりだいさくせん"
+

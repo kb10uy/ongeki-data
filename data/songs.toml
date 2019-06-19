@@ -106,6 +106,36 @@ updated_at = "2019-05-08T15:00:00"
     name = "ZAQ"
     reading = "ざっく"
 
+# ONGEKI Vocal Collection 05
+
+[[songs]]
+  title = "Y.Y.Y.計画!!!!"
+  reading = "わいわいわいけいかく"
+  [songs.composer]
+    name = "烏屋茶房"
+    reading = "からすやさぼう"
+
+[[songs]]
+  title = "Rule the World!!"
+  reading = "るーるざわーるど"
+  [songs.composer]
+    name = "八木雄一"
+    reading = "やぎゆういち"
+
+[[songs]]
+  title = "UTAKATA"
+  reading = "うたかた"
+  [songs.composer]
+    name = "ゆよゆっぺ"
+    reading = "ゆよゆっぺ"
+
+[[songs]]
+  title = "どうぶつ☆パラダイス"
+  reading = "どうぶつぱらだいす"
+  [songs.composer]
+    name = "村井大"
+    reading = "むらいだい"
+
 # ONGEKI Sound Collection 01
 
 [[songs]]
@@ -191,6 +221,58 @@ updated_at = "2019-05-08T15:00:00"
   [songs.composer]
     name = "xi"
     reading = "さい"
+
+# ONGEKI Memorial Soundtrack Sakura
+# 原則として原曲と同じ読みを採用します
+
+[[songs]]
+  title = "Ai Nov -Full Edit-"
+  reading = "あいのう"
+  [songs.composer]
+    name = "Feryquitous"
+    reading = "ふぇりきたす"
+
+[[songs]]
+  title = "Maqrite (Long Version)"
+  reading = "まくりて"
+  [songs.composer]
+    name = "owl＊tree"
+    reading = "あうるつりー"
+
+[[songs]]
+  title = "Everlasting Today (album extended)"
+  reading = "えばーらすてぃんぐとぅでい"
+  [songs.composer]
+    name = "void (Mournfinale)"
+    reading = "ゔぉいど"
+
+[[songs]]
+  title = "Opfer 〜有栖の生贄〜"
+  reading = "おぷふぁー"
+  [songs.composer]
+    name = "かねこちはる"
+    reading = "かねこちはる"
+
+[[songs]]
+  title = "MEGATON BLAST (tpz Overcute Remix)"
+  reading = "めがとんぶらすと"
+  [songs.composer]
+    name = "t+pazolite"
+    reading = "とぱぞらいと"
+
+[[songs]]
+  title = "fulgente (flip-side color mix)"
+  reading = "ふるじぇんて"
+  [songs.composer]
+    name = "穴山大輔"
+    reading = "あなやまだいすけ"
+
+# [[songs]]
+#   title = "????????"
+#   reading = ""
+#   [songs.composer]
+#     name = "????????"
+#     reading = ""
 
 # オンゲキプラス 初出の CD 未収録分
 
