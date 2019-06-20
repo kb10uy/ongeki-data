@@ -267,12 +267,12 @@ updated_at = "2019-05-08T15:00:00"
     name = "穴山大輔"
     reading = "あなやまだいすけ"
 
-# [[songs]]
-#   title = "????????"
-#   reading = ""
-#   [songs.composer]
-#     name = "????????"
-#     reading = ""
+[[songs]]
+  title = "Viyella's Tears"
+  reading = "ゔぃえらずてぃあーず"
+  [songs.composer]
+    name = "Laur"
+    reading = "らうる"
 
 # オンゲキプラス 初出の CD 未収録分
 
