@@ -1,4 +1,4 @@
-updated_at = "2019-05-08T15:00:00"
+updated_at = "2019-07-18T19:00:00"
 
 # ONGEKI Vocal Collection 01
 
@@ -110,7 +110,7 @@ updated_at = "2019-05-08T15:00:00"
 
 [[songs]]
   title = "Y.Y.Y.計画!!!!"
-  reading = "わいわいわいけいかく"
+  reading = "やばいくらいよのなかをわいわいさせちゃうぞけいかく"
   [songs.composer]
     name = "烏屋茶房"
     reading = "からすやさぼう"
@@ -340,9 +340,9 @@ updated_at = "2019-05-08T15:00:00"
     reading = "さくじょ" # 審議対象
 
 # オンゲキ LIVE vol.1
-# [[songs]]
-#   title = "Starring Stars"
-#   reading = "すたーりんぐすたーず"
-#   [song.composer]
-#     name = ""
-#     reading = ""
+[[songs]]
+  title = "Starring Stars"
+  reading = "すたーりんぐすたーず"
+  [song.composer]
+    name = "馬渕直純"
+    reading = "まぶちなおずみ"
