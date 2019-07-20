@@ -77,3 +77,7 @@ updated_at = "2019-05-08T15:00:00"
     title = "ドタバタ子守り大作戦"
     reading = "どたばたこもりだいさくせん"
 
+  [[sections.chapters]]
+    number = 6
+    title = "ギーコギーコでトントントン"
+    reading = "ぎーこぎーこでとんとんとん"
