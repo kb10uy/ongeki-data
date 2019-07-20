@@ -343,6 +343,6 @@ updated_at = "2019-07-18T19:00:00"
 [[songs]]
   title = "Starring Stars"
   reading = "すたーりんぐすたーず"
-  [song.composer]
+  [songs.composer]
     name = "馬渕直純"
     reading = "まぶちなおずみ"
