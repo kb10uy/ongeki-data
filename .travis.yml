@@ -4,9 +4,9 @@ rust:
 cache: cargo
 script:
   - cargo build --verbose --all
-  - cargo run --bin emit-skk-dictionary -- ./dist/SKK-JISYO.ongeki.utf8
-  - cargo run --bin emit-atok-dictionary -- ./dist/ongeki-atok.txt
-  - cargo run --bin emit-msime-dictionary -- ./dist/ongeki-msime.txt
+  - cargo run -- -t skk ./dist/SKK-JISYO.ongeki.utf8
+  - cargo run -- -t atok ./dist/ongeki-atok.txt
+  - cargo run -- -t msime ./dist/ongeki-msime.txt
 
 deploy:
   provider: releases

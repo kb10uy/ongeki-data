@@ -72,7 +72,7 @@ fn main() -> Result<(), Error> {
 fn run(matches: &ArgMatches) -> Result<(), Error> {
     // 引数
     let output_name = matches.value_of("OUTPUT").unwrap();
-    let output_type = matches.value_of("type").unwrap();
+    let output_type = matches.value_of("dictionary-type").unwrap();
     let generals_filename = matches.value_of("general-definitions").unwrap();
     let characters_filename = matches.value_of("character-definitions").unwrap();
     let songs_filename = matches.value_of("song-definitions").unwrap();
