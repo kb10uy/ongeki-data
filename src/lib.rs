@@ -13,6 +13,6 @@ pub use crate::{
     ime::{atok::AtokDictionaryEntry, msime::MsimeDictionaryEntry, skk::SkkDictionaryEntry},
     io::{
         load_character_definitions, load_general_definitions, load_song_definitions,
-        write_as_utf16, CharactersDefinition, SongsDefinition,
+        write_as_utf16, CharactersDefinition, GeneralDefinition, SongsDefinition,
     },
 };

@@ -1,5 +1,7 @@
 use std::collections::BTreeMap;
 use std::fmt;
+use std::io::Write;
+use failure::Error;
 
 use crate::dictionary::{DictionaryEntry, DictionaryEntryKind, EmitDictionary};
 

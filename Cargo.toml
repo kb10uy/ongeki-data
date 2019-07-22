@@ -5,16 +5,8 @@ authors = ["kb10uy <kb10uy@kb10uy.org>"]
 edition = "2018"
 
 [[bin]]
-name = "emit-skk-dictionary"
-path = "./src/bin/emit-skk-dictionary.rs"
-
-[[bin]]
-name = "emit-atok-dictionary"
-path = "./src/bin/emit-atok-dictionary.rs"
-
-[[bin]]
-name = "emit-msime-dictionary"
-path = "./src/bin/emit-msime-dictionary.rs"
+name = "emit-dictionary"
+path = "./src/bin/emit-dictionary.rs"
 
 [lib]
 path = "./src/lib.rs"
