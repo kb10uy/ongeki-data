@@ -81,3 +81,8 @@ updated_at = "2019-07-18T19:00:00"
     number = 6
     title = "ギーコギーコでトントントン"
     reading = "ぎーこぎーこでとんとんとん"
+
+  [[sections.chapters]]
+    number = 7
+    title = "レッツ・ニャーベラス！"
+    reading = "れっつにゃーべらす"

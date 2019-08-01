@@ -339,7 +339,23 @@ updated_at = "2019-07-18T19:00:00"
     name = "削除 (Violin: Katali)"
     reading = "さくじょ" # 審議対象
 
+[[songs]]
+  title = "ω4"
+  reading = "おめがふぉー"
+  [songs.composer]
+    name = "穴山大輔 VS 光吉猛修 VS kai"
+    reading = "あなやまだいすけばーさすみつよしたけのぶばーさすかい" # 審議対象
+
+[[songs]]
+  title = "Aenbharr"
+  reading = "あんゔぁる"
+  [songs.composer]
+    name = "Project Grimoire"
+    reading = "ぷろじぇくとぐりもわーる"
+
+
 # オンゲキ LIVE vol.1
+
 [[songs]]
   title = "Starring Stars"
   reading = "すたーりんぐすたーず"

@@ -107,3 +107,10 @@ reading = "せぶんでいずほりでいず" # 未確定情報
   [characters.voice_actor]
     name = ["長縄", "まりあ"]
     reading = ["ながなわ", "まりあ"]
+
+# [[characters]]
+#   name = ["柏木", "美亜"]
+#   reading = ["かしわぎ", "みあ"]
+#   [characters.voice_actor]
+#     name = ["", ""]
+#     reading = ["", ""]
