@@ -1,4 +1,4 @@
-updated_at = "2019-04-04T00:00:00"
+updated_at = "2019-08-02T00:00:00"
 
 [[units]]
 name = "ASTERISM"
@@ -15,6 +15,10 @@ reading = "びたーふれーばー"
 [[units]]
 name = "7EVENDAYS⇔HOLIDAYS"
 reading = "せぶんでいずほりでいず" # 未確定情報
+
+[[units]]
+name = "R.B.P."
+reading = "あーるびーぴー"
 
 
 [[characters]]
@@ -108,9 +112,9 @@ reading = "せぶんでいずほりでいず" # 未確定情報
     name = ["長縄", "まりあ"]
     reading = ["ながなわ", "まりあ"]
 
-# [[characters]]
-#   name = ["柏木", "美亜"]
-#   reading = ["かしわぎ", "みあ"]
-#   [characters.voice_actor]
-#     name = ["", ""]
-#     reading = ["", ""]
+[[characters]]
+  name = ["柏木", "美亜"]
+  reading = ["かしわぎ", "みあ"]
+  [characters.voice_actor]
+    name = ["和氣", "あず未"]
+    reading = ["わき", "あずみ"]
