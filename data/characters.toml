@@ -1,4 +1,4 @@
-updated_at = "2019-08-02T00:00:00"
+updated_at = "2019-08-11T00:00:00"
 
 [[units]]
 name = "ASTERISM"
@@ -118,3 +118,18 @@ reading = "あーるびーぴー"
   [characters.voice_actor]
     name = ["和氣", "あず未"]
     reading = ["わき", "あずみ"]
+
+[[characters]]
+  name = ["日向", "千夏"]
+  reading = ["ひなた", "ちなつ"]
+  [characters.voice_actor]
+    name = ["岡咲", "美保"]
+    reading = ["おかさき", "みほ"]
+
+[[characters]]
+  name = ["東雲", "つむぎ"]
+  reading = ["しののめ", "つむぎ"]
+  [characters.voice_actor]
+    name = ["和泉", "風花"]
+    reading = ["いずみ", "ふうか"]
+

@@ -1,4 +1,4 @@
-updated_at = "2019-08-02T19:00:00"
+updated_at = "2019-08-10T19:00:00"
 
 # ONGEKI Vocal Collection 01
 
@@ -267,14 +267,16 @@ updated_at = "2019-08-02T19:00:00"
     name = "穴山大輔"
     reading = "あなやまだいすけ"
 
-[[songs]]
-  title = "Viyella's Tears"
-  reading = "ゔぃえらずてぃあーず"
-  [songs.composer]
-    name = "Laur"
-    reading = "らうる"
 
-# オンゲキプラス 初出の CD 未収録分
+
+# ONGEKI Sound Collection 02
+
+[[songs]]
+  title = "最強 the サマータイム!!!!!"
+  reading = "さいきょうざさまーたいむ"
+  [songs.composer]
+    name = "村カワ基成"
+    reading = "むらかわもとなり"
 
 [[songs]]
   title = "TAKE ON THE WORLD"
@@ -338,6 +340,14 @@ updated_at = "2019-08-02T19:00:00"
   [songs.composer]
     name = "削除 (Violin: Katali)"
     reading = "さくじょ" # 審議対象
+
+# OMMC に先行収録されたけどこっちに移動した
+[[songs]]
+  title = "Viyella's Tears"
+  reading = "ゔぃえらずてぃあーず"
+  [songs.composer]
+    name = "Laur"
+    reading = "らうる"
 
 [[songs]]
   title = "ω4"
