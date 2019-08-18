@@ -20,6 +20,10 @@ reading = "せぶんでいずほりでいず" # 未確定情報
 name = "R.B.P."
 reading = "あーるびーぴー"
 
+[[units]]
+name = "マーチングポケッツ"
+reading = "まーちんぐぽけっつ"
+
 
 [[characters]]
   name = ["星咲", "あかり"]
