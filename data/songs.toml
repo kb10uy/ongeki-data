@@ -375,51 +375,51 @@ updated_at = "2019-08-10T19:00:00"
 
 # オンゲキ SUMMER
 
-# [[songs]]
-#   title = "Touch and Go"
-#   reading = ""
-#   [songs.composer]
-#     name = "Noah"
-#     reading = "のあ"
-#
-# [[songs]]
-#   title = "Baqeela"
-#   reading = ""
-#   [songs.composer]
-#     name = "owl＊tree"
-#     reading = "あうるつりー"
-#
-# [[songs]]
-#   title = "まっすぐ→→→ストリーム!"
-#   reading = ""
-#   [songs.composer]
-#     name = "本多友紀(Arte Refact)"
-#     reading = "ほんだゆうき"
-#
-# [[songs]]
-#   title = "夜明けのストリング"
-#   reading = ""
-#   [songs.composer]
-#     name = "DJ Genki"
-#     reading = "でぃーじぇいげんき" # ニコニコ大百科がこの読みだったので
-#
-# [[songs]]
-#   title = "Desperado Waltz"
-#   reading = ""
-#   [songs.composer]
-#     name = "ぺのれり"
-#     reading = "ぺのれり"
-#
-# [[songs]]
-#   title = "トリドリモリモリ！ Lovely fruits☆"
-#   reading = ""
-#   [songs.composer]
-#     name = "やしきん"
-#     reading = "やしきん"
-#
-# [[songs]]
-#   title = "Lazy Addiction"
-#   reading = ""
-#   [songs.composer]
-#     name = "sky_delta"
-#     reading = "すかいでるた"
+[[songs]]
+  title = "Touch and Go"
+  reading = "たっちあんどごー"
+  [songs.composer]
+    name = "Noah"
+    reading = "のあ"
+
+[[songs]]
+  title = "Baqeela"
+  reading = "ばきーら" # 未確定情報
+  [songs.composer]
+    name = "owl＊tree"
+    reading = "あうるつりー"
+
+[[songs]]
+  title = "まっすぐ→→→ストリーム!"
+  reading = "まっすぐすとりーむ"
+  [songs.composer]
+    name = "本多友紀(Arte Refact)"
+    reading = "ほんだゆうき"
+
+[[songs]]
+  title = "夜明けのストリング"
+  reading = "よあけのすとりんぐ"
+  [songs.composer]
+    name = "DJ Genki"
+    reading = "でぃーじぇいげんき" # ニコニコ大百科がこの読みだったので
+
+[[songs]]
+  title = "Desperado Waltz"
+  reading = "ですぺらーどわるつ"
+  [songs.composer]
+    name = "ぺのれり"
+    reading = "ぺのれり"
+
+[[songs]]
+  title = "トリドリモリモリ！ Lovely fruits☆"
+  reading = "とりどりもりもりらぶりーふるーつ"
+  [songs.composer]
+    name = "やしきん"
+    reading = "やしきん"
+
+[[songs]]
+  title = "Lazy Addiction"
+  reading = "れいじーあでぃくしょん"
+  [songs.composer]
+    name = "sky_delta"
+    reading = "すかいでるた"

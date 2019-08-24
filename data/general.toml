@@ -86,3 +86,11 @@ updated_at = "2019-08-02T19:00:00"
     number = 7
     title = "レッツ・ニャーベラス！"
     reading = "れっつにゃーべらす"
+
+[[sections]]
+  number = 3
+
+  [[sections.chapters]]
+    number = 1
+    title = "いきなりシューターフェス決勝！"
+    reading = "いきなりしゅーたーふぇすけっしょう"
