@@ -62,7 +62,7 @@ pub fn load_general_definitions(path: &str) -> Result<GeneralDefinition, Error> 
 /// UTF-16 文字列として書き込む
 pub fn write_as_utf16(w: &mut dyn Write, text: &str) -> Result<(), Error> {
     for code in text.encode_utf16() {
-        w.write(&[(code & 0xff) as u8, (code >> 8) as u8])?;
+        Write::write_all(w, &[(code & 0xff) as u8, (code >> 8) as u8])?;
     }
     Ok(())
 }

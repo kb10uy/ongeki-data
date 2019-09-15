@@ -43,7 +43,7 @@ pub trait EmitDictionary
 where
     Self: Sized,
 {
-    fn emit(entries: &Vec<DictionaryEntry>) -> Vec<Self>;
+    fn emit(entries: &[DictionaryEntry]) -> Vec<Self>;
 }
 
 /// 抽象的な辞書エントリを生成する

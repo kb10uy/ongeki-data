@@ -10,7 +10,7 @@ pub struct MsimeDictionaryEntry {
 }
 
 impl EmitDictionary for MsimeDictionaryEntry {
-    fn emit(entries: &Vec<DictionaryEntry>) -> Vec<MsimeDictionaryEntry> {
+    fn emit(entries: &[DictionaryEntry]) -> Vec<MsimeDictionaryEntry> {
         let mut result = vec![];
         for entry in entries {
             result.push(MsimeDictionaryEntry {

@@ -10,7 +10,7 @@ pub struct AtokDictionaryEntry {
 }
 
 impl EmitDictionary for AtokDictionaryEntry {
-    fn emit(entries: &Vec<DictionaryEntry>) -> Vec<AtokDictionaryEntry> {
+    fn emit(entries: &[DictionaryEntry]) -> Vec<AtokDictionaryEntry> {
         let mut result = vec![];
         for entry in entries {
             result.push(AtokDictionaryEntry {

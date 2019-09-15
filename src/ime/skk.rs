@@ -1,7 +1,5 @@
 use std::collections::BTreeMap;
 use std::fmt;
-use std::io::Write;
-use failure::Error;
 
 use crate::dictionary::{DictionaryEntry, DictionaryEntryKind, EmitDictionary};
 
@@ -12,7 +10,7 @@ pub struct SkkDictionaryEntry {
 }
 
 impl EmitDictionary for SkkDictionaryEntry {
-    fn emit(entries: &Vec<DictionaryEntry>) -> Vec<SkkDictionaryEntry> {
+    fn emit(entries: &[DictionaryEntry]) -> Vec<SkkDictionaryEntry> {
         let mut map = BTreeMap::<String, Vec<&DictionaryEntry>>::new();
         for entry in entries {
             if let Some(list) = map.get_mut(&entry.reading) {
@@ -39,10 +37,7 @@ impl SkkDictionaryEntry {
             ("/", "\\057"),
             (";", "\\059"),
         ];
-        let find_replacement = |&(ec, _)| match text.find(ec) {
-            Some(_) => true,
-            None => false,
-        };
+        let find_replacement = |&(ec, _)| text.find(ec).is_some();
 
         if replacement.iter().any(find_replacement) {
             let mut replaced = text.to_owned();
