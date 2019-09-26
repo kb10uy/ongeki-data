@@ -1,4 +1,4 @@
-updated_at = "2019-08-10T19:00:00"
+updated_at = "2019-09-26T18:00:00"
 
 # ONGEKI Vocal Collection 01
 
@@ -423,3 +423,17 @@ updated_at = "2019-08-10T19:00:00"
   [songs.composer]
     name = "sky_delta"
     reading = "すかいでるた"
+
+[[songs]]
+  title = "MAKING！ハイタッチ！"
+  reading = "めいきんぐはいたっち"
+  [songs.composer]
+    name = "山本恭平(Arte Refact)"
+    reading = "やまもときょうへい"
+
+[[songs]]
+  title = "GEOMETRIC DANCE"
+  reading = "じおめとりっくだんす"
+  [songs.composer]
+    name = "山本真央樹"
+    reading = "やまもとまおき"

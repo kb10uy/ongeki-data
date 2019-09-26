@@ -1,4 +1,4 @@
-updated_at = "2019-08-02T19:00:00"
+updated_at = "2019-09-26T18:00:00"
 
 [[sections]]
   number = 1
@@ -94,3 +94,9 @@ updated_at = "2019-08-02T19:00:00"
     number = 1
     title = "いきなりシューターフェス決勝！"
     reading = "いきなりしゅーたーふぇすけっしょう"
+
+  # サイドチャプターという概念が出てきたので100足して手抜き
+  [[sections.chapters]]
+    number = 101
+    title = "海の家で一番美味しいアレ"
+    reading = "うみのいえでいちばんおいしいあれ"
