@@ -1,4 +1,4 @@
-updated_at = "2019-09-26T18:00:00"
+updated_at = "2019-10-26T23:00:00"
 
 # ONGEKI Vocal Collection 01
 
@@ -437,3 +437,24 @@ updated_at = "2019-09-26T18:00:00"
   [songs.composer]
     name = "山本真央樹"
     reading = "やまもとまおき"
+
+[[songs]]
+  title = "ポケットからぬりつぶせ！"
+  reading = "ぽけっとからぬりつぶせ"
+  [songs.composer]
+    name = "中山真斗"
+    reading = "なかやままさと"
+
+[[songs]]
+  title = "Mini skirt"
+  reading = "みにすかーと"
+  [songs.composer]
+    name = "はるなば"
+    reading = "はるなば"
+
+[[songs]]
+  title = "HONEY-Q"
+  reading = "はにーきゅー"
+  [songs.composer]
+    name = "こふ"
+    reading = "こふ"
