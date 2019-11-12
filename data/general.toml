@@ -1,4 +1,4 @@
-updated_at = "2019-10-25T23:00:00"
+updated_at = "2019-11-12T22:00:00"
 
 [[sections]]
   number = 1
@@ -105,3 +105,8 @@ updated_at = "2019-10-25T23:00:00"
     number = 102
     title = "箱の中身はなんだろな"
     reading = "はこのなかみはなんだろな"
+
+  [[sections.chapters]]
+    number = 103
+    title = "あぶない水着大事件"
+    reading = "あぶないみずぎだいじけん"

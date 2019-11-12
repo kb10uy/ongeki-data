@@ -1,4 +1,4 @@
-updated_at = "2019-10-26T23:00:00"
+updated_at = "2019-11-12T22:00:00"
 
 # ONGEKI Vocal Collection 01
 
@@ -458,3 +458,18 @@ updated_at = "2019-10-26T23:00:00"
   [songs.composer]
     name = "こふ"
     reading = "こふ"
+
+[[songs]]
+  title = "感情アクセラレイション"
+  reading = "かんじょうあくせられいしょん"
+  [songs.composer]
+    name = "矢鴇つかさ"
+    reading = "やときつかさ"
+
+[[songs]]
+  title = "A Man In The Mirror"
+  reading = "あまんいんざみらー"
+  [songs.composer]
+    name = "orangentle"
+    reading = "おらんじぇんとる"
+
