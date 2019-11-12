@@ -13,24 +13,21 @@ path = "./src/lib.rs"
 
 # Dependencies
 
-[dependencies.failure]
-version = "0.1.5"
-
 [dependencies.log]
-version = "0.4.6"
+version = "0.4"
 
 [dependencies.env_logger]
-version = "0.6.1"
+version = "0.7"
 
 [dependencies.clap]
-version = "2.32.0"
+version = "2.33"
 
 [dependencies.serde]
 version = "1.0"
 features = ["derive"]
 
 [dependencies.toml]
-version = "0.4"
+version = "0.5"
 
 [dependencies.chrono]
-version = "0.4.6"
+version = "0.4"

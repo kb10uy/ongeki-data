@@ -1,6 +1,6 @@
 use std::fs::File;
 use std::io::{Read, Write};
-use failure::Error;
+use std::error::Error;
 use serde::Deserialize;
 use toml;
 
@@ -30,7 +30,7 @@ pub struct GeneralDefinition {
 
 
 /// 指定されたパスのファイルからキャラクター定義を読み込む
-pub fn load_character_definitions(path: &str) -> Result<CharactersDefinition, Error> {
+pub fn load_character_definitions(path: &str) -> Result<CharactersDefinition, Box<dyn Error>> {
     let mut file = File::open(path)?;
     let mut buffer = String::new();
     file.read_to_string(&mut buffer)?;
@@ -40,7 +40,7 @@ pub fn load_character_definitions(path: &str) -> Result<CharactersDefinition, Er
 }
 
 /// 指定されたパスのファイルから楽曲定義を読み込む
-pub fn load_song_definitions(path: &str) -> Result<SongsDefinition, Error> {
+pub fn load_song_definitions(path: &str) -> Result<SongsDefinition, Box<dyn Error>> {
     let mut file = File::open(path)?;
     let mut buffer = String::new();
     file.read_to_string(&mut buffer)?;
@@ -50,7 +50,7 @@ pub fn load_song_definitions(path: &str) -> Result<SongsDefinition, Error> {
 }
 
 /// 指定されたパスのファイルから楽曲定義を読み込む
-pub fn load_general_definitions(path: &str) -> Result<GeneralDefinition, Error> {
+pub fn load_general_definitions(path: &str) -> Result<GeneralDefinition, Box<dyn Error>> {
     let mut file = File::open(path)?;
     let mut buffer = String::new();
     file.read_to_string(&mut buffer)?;
@@ -60,7 +60,7 @@ pub fn load_general_definitions(path: &str) -> Result<GeneralDefinition, Error> 
 }
 
 /// UTF-16 文字列として書き込む
-pub fn write_as_utf16(w: &mut dyn Write, text: &str) -> Result<(), Error> {
+pub fn write_as_utf16(w: &mut dyn Write, text: &str) -> Result<(), Box<dyn Error>> {
     for code in text.encode_utf16() {
         Write::write_all(w, &[(code & 0xff) as u8, (code >> 8) as u8])?;
     }

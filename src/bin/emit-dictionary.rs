@@ -1,6 +1,6 @@
 use clap::{App, Arg, ArgMatches};
 use env_logger;
-use failure::Error;
+use std::error::Error;
 use log::info;
 use std::{
     fs::File,
@@ -12,7 +12,7 @@ use ongeki_data::{
     MsimeDictionaryEntry, SkkDictionaryEntry, SongsDefinition,
 };
 
-fn main() -> Result<(), Error> {
+fn main() -> Result<(), Box<dyn Error>> {
     env_logger::init();
 
     let app = App::new("オンゲキ SKK 辞書生成ツール")
@@ -69,7 +69,7 @@ fn main() -> Result<(), Error> {
     run(&matches)
 }
 
-fn run(matches: &ArgMatches) -> Result<(), Error> {
+fn run(matches: &ArgMatches) -> Result<(), Box<dyn Error>> {
     // 引数
     let output_name = matches.value_of("OUTPUT").unwrap();
     let output_type = matches.value_of("dictionary-type").unwrap();
@@ -145,7 +145,7 @@ fn log_information(
     generals: &GeneralDefinition,
     characters: &CharactersDefinition,
     songs: &SongsDefinition,
-) -> Result<(), Error> {
+) -> Result<(), Box<dyn Error>> {
     info!(
         "General definitions loaded (updated on {})",
         generals.updated_at
