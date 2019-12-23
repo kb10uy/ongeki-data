@@ -1,4 +1,4 @@
-updated_at = "2019-11-12T22:00:00"
+updated_at = "2019-12-23T13:00:00"
 
 [[sections]]
   number = 1
@@ -110,3 +110,14 @@ updated_at = "2019-11-12T22:00:00"
     number = 103
     title = "あぶない水着大事件"
     reading = "あぶないみずぎだいじけん"
+
+  # これはイベントチャプターなので200足す
+  [[sections.chapters]]
+    number = 201
+    title = "聖なる夜のプレゼント"
+    reading = "せいなるよるのぷれぜんと"
+
+  [[sections.chapters]]
+    number = 105
+    title = "副会長のおサボり体験"
+    reading = "ふくかいちょうのおさぼりたいけん"
