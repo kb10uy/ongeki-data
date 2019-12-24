@@ -148,7 +148,7 @@ updated_at = "2019-12-23T13:00:00"
     reading = "なかやままさと"
 
 [[songs]]
-  title = "まっすぐ→→→ストリーム!"
+  title = "まっすぐ→→→ストリーム！"
   reading = "まっすぐすとりーむ"
   [songs.composer]
     name = "本多友紀(Arte Refact)"
@@ -162,7 +162,7 @@ updated_at = "2019-12-23T13:00:00"
     reading = "でぃーじぇいげんき" # ニコニコ大百科がこの読みだったので
 
 [[songs]]
-  title = "トリドリモリモリ！ Lovely fruits☆"
+  title = "トリドリ⇒モリモリ！ Lovely fruits☆"
   reading = "とりどりもりもりらぶりーふるーつ"
   [songs.composer]
     name = "やしきん"
@@ -504,7 +504,7 @@ updated_at = "2019-12-23T13:00:00"
     reading = "むつきしゅうへい"
 
 [[songs]]
-  title = "HONEY BEAR"
+  title = "Honey Bear"
   reading = "はにーべあ"
   [songs.composer]
     name = "Freezer"
