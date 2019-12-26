@@ -57,8 +57,10 @@ impl fmt::Display for SkkDictionaryEntry {
         for (word, kind) in self.entries.iter() {
             let escaped_words = SkkDictionaryEntry::escape(&word);
             let description = match kind {
-                DictionaryEntryKind::Chapter(sec, cha) => {
-                    format!("第{}章チャプター{}", sec, cha)
+                DictionaryEntryKind::Chapter(sec, cha) => match cha / 100 {
+                    1 => format!("第{}章サイドチャプター{}", sec, cha % 100),
+                    2 => format!("第{}章イベントチャプター{}", sec, cha % 100),
+                    _ => format!("第{}章チャプター{}", sec, cha % 100),
                 }
                 DictionaryEntryKind::Character => "キャラクター".to_owned(),
                 DictionaryEntryKind::VoiceActor => "声優".to_owned(),
