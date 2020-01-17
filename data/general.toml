@@ -1,4 +1,4 @@
-updated_at = "2019-12-23T13:00:00"
+updated_at = "2020-01-18T01:00:00"
 
 [[sections]]
   number = 1
@@ -121,3 +121,8 @@ updated_at = "2019-12-23T13:00:00"
     number = 104
     title = "副会長のおサボり体験"
     reading = "ふくかいちょうのおさぼりたいけん"
+
+  [[sections.chapters]]
+    number = 105
+    title = "千夏の潜入大作戦"
+    reading = "ちなつのせんにゅうだいさくせん"

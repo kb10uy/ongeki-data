@@ -1,4 +1,4 @@
-updated_at = "2019-12-23T13:00:00"
+updated_at = "2020-01-18T01:00:00"
 
 # ONGEKI Vocal Collection シリーズ =========================================
 
@@ -428,7 +428,7 @@ updated_at = "2019-12-23T13:00:00"
 
 [[songs]]
   title = "Baqeela"
-  reading = "ばきーら" # 未確定情報
+  reading = "ばきーら"
   [songs.composer]
     name = "owl＊tree"
     reading = "あうるつりー"
@@ -509,4 +509,18 @@ updated_at = "2019-12-23T13:00:00"
   [songs.composer]
     name = "Freezer"
     reading = "ふりーざー"
+
+[[songs]]
+  title = "ヒトリボッチサテライト"
+  reading = "ひとりぼっちさてらいと"
+  [songs.composer]
+    name = "cosMo@暴走P ver.Φ"
+    reading = "こすもあっとぼうそうぴー"
+
+[[songs]]
+  title = "Good bye, Merry-Go-Round"
+  reading = "ぐっばいめりーごーらうんど"
+  [songs.composer]
+    name = "Yooh"
+    reading = "ゆー"
 
