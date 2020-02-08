@@ -95,6 +95,11 @@ updated_at = "2020-01-18T01:00:00"
     title = "いきなりシューターフェス決勝！"
     reading = "いきなりしゅーたーふぇすけっしょう"
 
+  [[sections.chapters]]
+    number = 2
+    title = "ぷれぜんと・ふぉー・ゆー"
+    reading = "ぷれぜんとふぉーゆー"
+
   # サイドチャプターという概念が出てきたので100足して手抜き
   [[sections.chapters]]
     number = 101
@@ -111,12 +116,6 @@ updated_at = "2020-01-18T01:00:00"
     title = "あぶない水着大事件"
     reading = "あぶないみずぎだいじけん"
 
-  # これはイベントチャプターなので200足す
-  [[sections.chapters]]
-    number = 201
-    title = "聖なる夜のプレゼント"
-    reading = "せいなるよるのぷれぜんと"
-
   [[sections.chapters]]
     number = 104
     title = "副会長のおサボり体験"
@@ -126,3 +125,10 @@ updated_at = "2020-01-18T01:00:00"
     number = 105
     title = "千夏の潜入大作戦"
     reading = "ちなつのせんにゅうだいさくせん"
+
+  # これはイベントチャプターなので200足す
+  [[sections.chapters]]
+    number = 201
+    title = "聖なる夜のプレゼント"
+    reading = "せいなるよるのぷれぜんと"
+

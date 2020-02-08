@@ -1,4 +1,4 @@
-updated_at = "2020-01-18T01:00:00"
+updated_at = "2020-02-08T12:30:00"
 
 # ONGEKI Vocal Collection シリーズ =========================================
 
@@ -168,6 +168,29 @@ updated_at = "2020-01-18T01:00:00"
     name = "やしきん"
     reading = "やしきん"
 
+# ONGEKI Vocal Collection 07
+
+[[songs]]
+  title = "MAKING！ハイタッチ！"
+  reading = "めいきんぐはいたっち"
+  [songs.composer]
+    name = "山本恭平(Arte Refact)"
+    reading = "やまもときょうへい"
+
+[[songs]]
+  title = "感情アクセラレイション"
+  reading = "かんじょうあくせられいしょん"
+  [songs.composer]
+    name = "矢鴇つかさ"
+    reading = "やときつかさ"
+
+[[songs]]
+  title = "Heart Cooking Recipe"
+  reading = "はーとくっきんぐれしぴ"
+  [songs.composer]
+    name = "睦月周平"
+    reading = "むつきしゅうへい"
+
 # ONGEKI Sound Collection シリーズ =========================================
 
 # ONGEKI Sound Collection 01
@@ -256,8 +279,6 @@ updated_at = "2020-01-18T01:00:00"
     name = "xi"
     reading = "さい"
 
-
-
 # ONGEKI Sound Collection 02
 
 [[songs]]
@@ -267,7 +288,6 @@ updated_at = "2020-01-18T01:00:00"
     name = "村カワ基成"
     reading = "むらかわもとなり"
 
-# オンゲキLIVE vol.1 初出
 [[songs]]
   title = "Starring Stars"
   reading = "すたーりんぐすたーず"
@@ -448,13 +468,6 @@ updated_at = "2020-01-18T01:00:00"
     reading = "すかいでるた"
 
 [[songs]]
-  title = "MAKING！ハイタッチ！"
-  reading = "めいきんぐはいたっち"
-  [songs.composer]
-    name = "山本恭平(Arte Refact)"
-    reading = "やまもときょうへい"
-
-[[songs]]
   title = "GEOMETRIC DANCE"
   reading = "じおめとりっくだんす"
   [songs.composer]
@@ -476,13 +489,6 @@ updated_at = "2020-01-18T01:00:00"
     reading = "こふ"
 
 [[songs]]
-  title = "感情アクセラレイション"
-  reading = "かんじょうあくせられいしょん"
-  [songs.composer]
-    name = "矢鴇つかさ"
-    reading = "やときつかさ"
-
-[[songs]]
   title = "A Man In The Mirror"
   reading = "あまんいんざみらー"
   [songs.composer]
@@ -495,13 +501,6 @@ updated_at = "2020-01-18T01:00:00"
   [songs.composer]
     name = "原田篤"
     reading = "はらだあつし"
-
-[[songs]]
-  title = "Heart Cooking Recipe"
-  reading = "はーとくっきんぐれしぴ"
-  [songs.composer]
-    name = "睦月周平"
-    reading = "むつきしゅうへい"
 
 [[songs]]
   title = "Honey Bear"
@@ -523,4 +522,20 @@ updated_at = "2020-01-18T01:00:00"
   [songs.composer]
     name = "Yooh"
     reading = "ゆー"
+
+[[songs]]
+  title = "Radiance"
+  reading = "れいでぃあんす"
+  [songs.composer]
+    name = "Nhato"
+    reading = "なはと"
+
+# オンゲキ SUMMER PLUS
+
+[[songs]]
+  title = "R'N'R Monsta"
+  reading = "ろっくんろーるもんすたー"
+  [songs.composer]
+    name = "Light Magic Show"
+    reading = "らいとまじっくしょー"
 
