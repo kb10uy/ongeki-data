@@ -1,4 +1,4 @@
-updated_at = "2020-02-08T12:30:00"
+updated_at = "2020-02-16T13:0:00"
 
 # ONGEKI Vocal Collection シリーズ =========================================
 
@@ -533,9 +533,48 @@ updated_at = "2020-02-08T12:30:00"
 # オンゲキ SUMMER PLUS
 
 [[songs]]
+  title = "Splash Dance"
+  reading = "すぷらっしゅだんす"
+  [songs.composer]
+    name = "Q-MHz"
+    reading = "きゅーめがへるつ"
+
+[[songs]]
+  title = "Last Kingdom"
+  reading = "らすときんぐだむ"
+  [songs.composer]
+    name = "USAO"
+    reading = "うさお"
+
+[[songs]]
+  title = "Sparkle"
+  reading = "すぱーくる"
+  [songs.composer]
+    name = "Maozon"
+    reading = "まおぞん"
+
+[[songs]]
+  title = "Vibes 2k20"
+  reading = "ばいぶすにせんにじゅう" # ダッサッッ
+  # reading = "ばいぶすとぅーけーとぅうぇんてぃー" # なんかちがう
+  # reading = "ばいぶすとぅうぇんてぃーとぅうぇんてぃー" # なんかちがう
+  [songs.composer]
+    name = "Sound Artz"
+    reading = "さうんどあーつ"
+
+[[songs]]
   title = "R'N'R Monsta"
   reading = "ろっくんろーるもんすたー"
   [songs.composer]
     name = "Lite Show Magic"
     reading = "らいとしょーまじっく"
+
+# バージョン不明
+
+[[songs]]
+  title = "Jörqer"
+  reading = "じょーかー"
+  [songs.composer]
+    name = "owl＊tree"
+    reading = "あうるつりー"
 

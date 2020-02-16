@@ -1,4 +1,4 @@
-updated_at = "2020-01-18T01:00:00"
+updated_at = "2020-02-16T13:00:00"
 
 [[sections]]
   number = 1
@@ -99,6 +99,16 @@ updated_at = "2020-01-18T01:00:00"
     number = 2
     title = "ぷれぜんと・ふぉー・ゆー"
     reading = "ぷれぜんとふぉーゆー"
+
+  [[sections.chapters]]
+    number = 3
+    title = "コスプレ喫茶へようこそ"
+    reading = "こすぷれきっさへようこそ"
+
+  [[sections.chapters]]
+    number = 4
+    title = "クレープはママの味"
+    reading = "くれーぷはままのあじ"
 
   # サイドチャプターという概念が出てきたので100足して手抜き
   [[sections.chapters]]
