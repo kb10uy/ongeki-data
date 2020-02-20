@@ -555,9 +555,7 @@ updated_at = "2020-02-16T13:0:00"
 
 [[songs]]
   title = "Vibes 2k20"
-  reading = "ばいぶすにせんにじゅう" # ダッサッッ
-  # reading = "ばいぶすとぅーけーとぅうぇんてぃー" # なんかちがう
-  # reading = "ばいぶすとぅうぇんてぃーとぅうぇんてぃー" # なんかちがう
+  reading = "ばいぶすとぅーけーとぅうぇんてぃー" # 曲中での発音より
   [songs.composer]
     name = "Sound Artz"
     reading = "さうんどあーつ"
