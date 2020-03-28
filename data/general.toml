@@ -1,4 +1,4 @@
-updated_at = "2020-02-16T13:00:00"
+updated_at = "2020-03-28T14:00:00"
 
 [[sections]]
   number = 1
@@ -135,6 +135,11 @@ updated_at = "2020-02-16T13:00:00"
     number = 105
     title = "千夏の潜入大作戦"
     reading = "ちなつのせんにゅうだいさくせん"
+
+  [[sections.chapters]]
+    number = 106
+    title = "犬も歩けば撩乱乙女"
+    reading = "いぬもあるけばりょうらんおとめ"
 
   # これはイベントチャプターなので200足す
   [[sections.chapters]]

@@ -1,4 +1,4 @@
-updated_at = "2020-02-16T13:0:00"
+updated_at = "2020-03-28T14:00:00"
 
 # ONGEKI Vocal Collection シリーズ =========================================
 
@@ -380,64 +380,7 @@ updated_at = "2020-02-16T13:0:00"
     name = "Project Grimoire"
     reading = "ぷろじぇくとぐりもわーる"
 
-# ONGEKI Memorial Soundtrack シリーズ ======================================
-
-# ONGEKI Memorial Soundtrack Sakura
-
-[[songs]]
-  title = "Ai Nov -Full Edit-"
-  reading = "あいのう"
-  [songs.composer]
-    name = "Feryquitous"
-    reading = "ふぇりきたす"
-
-[[songs]]
-  title = "Maqrite (Long Version)"
-  reading = "まくりて"
-  [songs.composer]
-    name = "owl＊tree"
-    reading = "あうるつりー"
-
-[[songs]]
-  title = "Everlasting Today (album extended)"
-  reading = "えばーらすてぃんぐとぅでい"
-  [songs.composer]
-    name = "void (Mournfinale)"
-    reading = "ゔぉいど"
-
-[[songs]]
-  title = "Opfer 〜有栖の生贄〜"
-  reading = "おぷふぁー"
-  [songs.composer]
-    name = "かねこちはる"
-    reading = "かねこちはる"
-
-[[songs]]
-  title = "MEGATON BLAST (tpz Overcute Remix)"
-  reading = "めがとんぶらすと"
-  [songs.composer]
-    name = "t+pazolite"
-    reading = "とぱぞらいと"
-
-[[songs]]
-  title = "fulgente (flip-side color mix)"
-  reading = "ふるじぇんて"
-  [songs.composer]
-    name = "穴山大輔"
-    reading = "あなやまだいすけ"
-
-# ONGEKI Memorial Soundtrack himawari
-[[songs]]
-  title = "スン(マイル)フラワー～Sun(Mile)Flower"
-  reading = "すんまいるふらわー"
-  # Funta3/Funta7 両名の名義なのでユニット名としました
-  [songs.composer]
-    name = "Funta"
-    reading = "ふぁんた"
-
-# CD 未収録楽曲 ===========================================================
-
-# オンゲキ SUMMER
+# ONGEKI Sound Collection 03
 
 [[songs]]
   title = "Touch and Go"
@@ -530,6 +473,63 @@ updated_at = "2020-02-16T13:0:00"
     name = "Nhato"
     reading = "なはと"
 
+# ONGEKI Memorial Soundtrack シリーズ ======================================
+
+# ONGEKI Memorial Soundtrack Sakura
+
+[[songs]]
+  title = "Ai Nov -Full Edit-"
+  reading = "あいのう"
+  [songs.composer]
+    name = "Feryquitous"
+    reading = "ふぇりきたす"
+
+[[songs]]
+  title = "Maqrite (Long Version)"
+  reading = "まくりて"
+  [songs.composer]
+    name = "owl＊tree"
+    reading = "あうるつりー"
+
+[[songs]]
+  title = "Everlasting Today (album extended)"
+  reading = "えばーらすてぃんぐとぅでい"
+  [songs.composer]
+    name = "void (Mournfinale)"
+    reading = "ゔぉいど"
+
+[[songs]]
+  title = "Opfer 〜有栖の生贄〜"
+  reading = "おぷふぁー"
+  [songs.composer]
+    name = "かねこちはる"
+    reading = "かねこちはる"
+
+[[songs]]
+  title = "MEGATON BLAST (tpz Overcute Remix)"
+  reading = "めがとんぶらすと"
+  [songs.composer]
+    name = "t+pazolite"
+    reading = "とぱぞらいと"
+
+[[songs]]
+  title = "fulgente (flip-side color mix)"
+  reading = "ふるじぇんて"
+  [songs.composer]
+    name = "穴山大輔"
+    reading = "あなやまだいすけ"
+
+# ONGEKI Memorial Soundtrack himawari
+[[songs]]
+  title = "スン(マイル)フラワー～Sun(Mile)Flower"
+  reading = "すんまいるふらわー"
+  # Funta3/Funta7 両名の名義なのでユニット名としました
+  [songs.composer]
+    name = "Funta"
+    reading = "ふぁんた"
+
+# CD 未収録楽曲 ===========================================================
+
 # オンゲキ SUMMER PLUS
 
 [[songs]]
@@ -567,6 +567,20 @@ updated_at = "2020-02-16T13:0:00"
     name = "Lite Show Magic"
     reading = "らいとしょーまじっく"
 
+[[songs]]
+  title = "撩乱乙女†無双劇"
+  reading = "りょうらんおとめむそうげき"
+  [songs.composer]
+    name = "Haggy Rock & 佐藤厚仁"
+    reading = "はぎーろっくあんどさとうあつひと"
+
+[[songs]]
+  title = "Ai Drew"
+  reading = "あいでゅれい"
+  [songs.composer]
+    name = "Feryquitous"
+    reading = "ふぇりきたす"
+
 # バージョン不明
 
 [[songs]]
@@ -575,4 +589,3 @@ updated_at = "2020-02-16T13:0:00"
   [songs.composer]
     name = "owl＊tree"
     reading = "あうるつりー"
-
