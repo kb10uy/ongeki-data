@@ -1,4 +1,4 @@
-updated_at = "2020-03-28T14:00:00"
+updated_at = "2020-06-14T18:00:00"
 
 [[sections]]
   number = 1
@@ -110,6 +110,11 @@ updated_at = "2020-03-28T14:00:00"
     title = "クレープはママの味"
     reading = "くれーぷはままのあじ"
 
+  [[sections.chapters]]
+    number = 5
+    title = "逢坂茜の挑戦状"
+    reading = "おうさかあかねのちょうせんじょう"
+
   # サイドチャプターという概念が出てきたので100足して手抜き
   [[sections.chapters]]
     number = 101
@@ -147,3 +152,7 @@ updated_at = "2020-03-28T14:00:00"
     title = "聖なる夜のプレゼント"
     reading = "せいなるよるのぷれぜんと"
 
+  [[sections.chapters]]
+    number = 202
+    title = "すずしまさんちの夜ごはん"
+    reading = "すずしまさんちのよるごはん"

@@ -1,4 +1,4 @@
-updated_at = "2020-03-28T14:00:00"
+updated_at = "2020-06-14T18:00:00"
 
 # ONGEKI Vocal Collection シリーズ =========================================
 
@@ -383,6 +383,13 @@ updated_at = "2020-03-28T14:00:00"
 # ONGEKI Sound Collection 03
 
 [[songs]]
+  title = "Splash Dance"
+  reading = "すぷらっしゅだんす"
+  [songs.composer]
+    name = "Q-MHz"
+    reading = "きゅーめがへるつ"
+
+[[songs]]
   title = "Touch and Go"
   reading = "たっちあんどごー"
   [songs.composer]
@@ -533,13 +540,6 @@ updated_at = "2020-03-28T14:00:00"
 # オンゲキ SUMMER PLUS
 
 [[songs]]
-  title = "Splash Dance"
-  reading = "すぷらっしゅだんす"
-  [songs.composer]
-    name = "Q-MHz"
-    reading = "きゅーめがへるつ"
-
-[[songs]]
   title = "Last Kingdom"
   reading = "らすときんぐだむ"
   [songs.composer]
@@ -580,6 +580,27 @@ updated_at = "2020-03-28T14:00:00"
   [songs.composer]
     name = "Feryquitous"
     reading = "ふぇりきたす"
+
+[[songs]]
+  title = "ぱくぱく☆がーる"
+  reading = "ぱくぱくがーる"
+  [songs.composer]
+    name = "齋藤大"
+    reading = "さいとうだい"
+
+[[songs]]
+  title = "アマツカミ"
+  reading = "あまつかみ"
+  [songs.composer]
+    name = "a_hisa"
+    reading = "えーひさ"
+
+[[songs]]
+  title = "DAWNBREAKER"
+  reading = "どーんぶりーかー"
+  [songs.composer]
+    name = "DJ Noriken"
+    reading = "でぃーじぇいのりけん"
 
 # バージョン不明
 
