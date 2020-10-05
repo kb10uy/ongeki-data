@@ -1,0 +1,86 @@
+on:
+  push:
+    tags:
+      - 'r*'
+
+name: 'Build dictionary data'
+
+jobs:
+  build:
+    name: 'Build for all IME types'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'Checkout source'
+        uses: 'actions/checkout@v2'
+
+      - name: 'Install toolchain'
+        uses: 'actions-rs/toolchain@v1'
+        with:
+          profile: 'minimal'
+          toolchain: 'stable'
+          override: true
+
+      - name: 'Build'
+        uses: 'actions-rs/cargo@v1'
+        with:
+          command: 'build'
+          args: '--release'
+
+      - name: 'Generate MSIME dictionary'
+        uses: 'actions-rs/cargo@v1'
+        with:
+          command: 'run'
+          args: '--release -- -t msime ./dist/ongeki-msime.txt'
+
+      - name: 'Generate ATOK dictionary'
+        uses: 'actions-rs/cargo@v1'
+        with:
+          command: 'run'
+          args: '--release -- -t atok ./dist/ongeki-atok.txt'
+
+      - name: 'Generate SKK dictionary'
+        uses: 'actions-rs/cargo@v1'
+        with:
+          command: 'run'
+          args: '--release -- -t skk ./dist/SKK-JISYO.ongeki.utf8'
+
+      - name: 'Create release'
+        id: 'create_release'
+        uses: 'actions/create-release@v1.0.0'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        with:
+          tag_name: '${{ github.ref }}'
+          release_name: '${{ github.ref }}'
+          draft: false
+          prerelease: false
+
+      - name: 'Upload MSIME dictionary'
+        uses: 'actions/upload-release-asset@v1.0.1'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        with:
+          upload_url: '${{ steps.create_release.outputs.upload_url }}'
+          asset_path: './dist/ongeki-msime.txt'
+          asset_name: 'ongeki-msime.txt'
+          asset_conten_type: text/plain
+
+    - name: 'Upload ATOK dictionary'
+        uses: 'actions/upload-release-asset@v1.0.1'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        with:
+          upload_url: '${{ steps.create_release.outputs.upload_url }}'
+          asset_path: './dist/ongeki-atok.txt'
+          asset_name: 'ongeki-atok.txt'
+          asset_conten_type: text/plain
+
+    - name: 'Upload MSIME dictionary'
+        uses: 'actions/upload-release-asset@v1.0.1'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        with:
+          upload_url: '${{ steps.create_release.outputs.upload_url }}'
+          asset_path: './dist/SKK-JISYO.ongeki.utf8'
+          asset_name: 'SKK-JISYO.ongeki.utf8'
+          asset_conten_type: text/plain
