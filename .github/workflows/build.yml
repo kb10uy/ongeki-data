@@ -66,21 +66,21 @@ jobs:
           asset_conten_type: text/plain
 
       - name: 'Upload ATOK dictionary'
-          uses: 'actions/upload-release-asset@v1.0.1'
-          env:
-            GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-          with:
-            upload_url: '${{ steps.create_release.outputs.upload_url }}'
-            asset_path: './dist/ongeki-atok.txt'
-            asset_name: 'ongeki-atok.txt'
-            asset_conten_type: text/plain
+        uses: 'actions/upload-release-asset@v1.0.1'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        with:
+          upload_url: '${{ steps.create_release.outputs.upload_url }}'
+          asset_path: './dist/ongeki-atok.txt'
+          asset_name: 'ongeki-atok.txt'
+          asset_conten_type: text/plain
 
       - name: 'Upload MSIME dictionary'
-          uses: 'actions/upload-release-asset@v1.0.1'
-          env:
-            GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-          with:
-            upload_url: '${{ steps.create_release.outputs.upload_url }}'
-            asset_path: './dist/SKK-JISYO.ongeki.utf8'
-            asset_name: 'SKK-JISYO.ongeki.utf8'
-            asset_conten_type: text/plain
+        uses: 'actions/upload-release-asset@v1.0.1'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        with:
+          upload_url: '${{ steps.create_release.outputs.upload_url }}'
+          asset_path: './dist/SKK-JISYO.ongeki.utf8'
+          asset_name: 'SKK-JISYO.ongeki.utf8'
+          asset_conten_type: text/plain
