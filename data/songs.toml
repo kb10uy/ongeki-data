@@ -1,4 +1,4 @@
-updated_at = "2020-06-14T18:00:00"
+updated_at = "2020-10-05T20:00:00"
 
 # ONGEKI Vocal Collection シリーズ =========================================
 
@@ -190,6 +190,54 @@ updated_at = "2020-06-14T18:00:00"
   [songs.composer]
     name = "睦月周平"
     reading = "むつきしゅうへい"
+
+# ONGEKI Vocal Party シリーズ ==============================================
+
+# ONGEKI Vocal Party 01
+
+[[songs]]
+  title = "Let's Starry Party!"
+  reading = "れっつすたーりーぱーてぃー"
+  [songs.composer]
+    name = "原田篤 (Arte Refact)"
+    reading = "はらだあつし"
+
+[[songs]]
+  title = "ぱくぱく☆がーる"
+  reading = "ぱくぱくがーる"
+  [songs.composer]
+    name = "齋藤大"
+    reading = "さいとうだい"
+
+[[songs]]
+  title = "進め！マイウェイ！"
+  reading = "すすめまいうぇい"
+  [songs.composer]
+    name = "篠崎あやと、橘亮祐"
+    reading = "しのざきあやとたちばなりょうすけ"
+
+# ONGEKI Vocal Party 02
+
+[[songs]]
+  title = "撩乱乙女†無双劇"
+  reading = "りょうらんおとめむそうげき"
+  [songs.composer]
+    name = "Haggy Rock & 佐藤厚仁"
+    reading = "はぎーろっくあんどさとうあつひと"
+
+[[songs]]
+  title = "夏色花火"
+  reading = "なついろはなび"
+  [songs.composer]
+    name = "穴山大輔"
+    reading = "穴山大輔"
+
+[[songs]]
+  title = "Iucidium \"Apocalypsis Mix\""
+  reading = "ゆーきでぃうむあぽかりぷしすみっくす"
+  [songs.composer]
+    name = "Powerless"
+    reading = "ぱわーれす"
 
 # ONGEKI Sound Collection シリーズ =========================================
 
@@ -568,25 +616,11 @@ updated_at = "2020-06-14T18:00:00"
     reading = "らいとしょーまじっく"
 
 [[songs]]
-  title = "撩乱乙女†無双劇"
-  reading = "りょうらんおとめむそうげき"
-  [songs.composer]
-    name = "Haggy Rock & 佐藤厚仁"
-    reading = "はぎーろっくあんどさとうあつひと"
-
-[[songs]]
   title = "Ai Drew"
   reading = "あいでゅれい"
   [songs.composer]
     name = "Feryquitous"
     reading = "ふぇりきたす"
-
-[[songs]]
-  title = "ぱくぱく☆がーる"
-  reading = "ぱくぱくがーる"
-  [songs.composer]
-    name = "齋藤大"
-    reading = "さいとうだい"
 
 [[songs]]
   title = "アマツカミ"
@@ -602,11 +636,102 @@ updated_at = "2020-06-14T18:00:00"
     name = "DJ Noriken"
     reading = "でぃーじぇいのりけん"
 
-# バージョン不明
+[[songs]]
+  title = "Galaxy Blaster"
+  reading = "ぎゃらくしーぶらすたー"
+  [songs.composer]
+    name = "ああああ"
+    reading = "ああああ"
 
 [[songs]]
-  title = "Jörqer"
-  reading = "じょーかー"
+  title = "Trinity Departure"
+  reading = "とりにてぃーでぱーちゃー"
   [songs.composer]
-    name = "owl＊tree"
-    reading = "あうるつりー"
+    name = "Soleily"
+    reading = "それいりー" # 情報求む
+
+[[songs]]
+  title = "絆はずっと Growing Up!!!"
+  reading = "きずなはずっとぐろーいんあっぷ"
+  [songs.composer]
+    name = "原田篤 (Arte Refact)"
+    reading = "はらだあつし"
+
+[[songs]]
+  title = "AstrøNotes."
+  reading = "あすとろのーつ"
+  [songs.composer]
+    name = "MisoilePunch♪"
+    reading = "みそいるぱんち"
+
+[[songs]]
+  title = "脳天直撃"
+  reading = "のうてんちょくげき"
+  [songs.composer]
+    name = "黒沢ダイスケ VS 穴山大輔"
+    reading = "くろさわだいすけばーさすあなやまだいすけ"
+
+[[songs]]
+  title = "Singularity"
+  reading = "しんぎゅらりてぃ"
+  [songs.composer]
+    name = "technoplanet"
+    reading = "てくのぷらねっと"
+
+# オンゲキ R.E.D.
+
+[[songs]]
+  title = "No Limit RED Force"
+  reading = "のーりみっとれっどふぉーす"
+  [songs.composer]
+    name = "本多友紀(Arte Refact)"
+    reading = "ほんだゆうき"
+
+[[songs]]
+  title = "GlitterGlitter"
+  reading = "ぐりったーぐりったー"
+  [songs.composer]
+    name = "睦月周平"
+    reading = "むつきしゅうへい"
+
+[[songs]]
+  title = "ウキウキ☆Candy!"
+  reading = "うきうききゃんでぃー"
+  [songs.composer]
+    name = "設楽哲也"
+    reading = "したらてつや"
+
+[[songs]]
+  title = "All Right!"
+  reading = "おーるらいと"
+  [songs.composer]
+    name = "DJ Genki"
+    reading = "でぃーじぇいげんき"
+
+[[songs]]
+  title = "RED to RED"
+  reading = "れっどとぅーれっど"
+  [songs.composer]
+    name = "REDALiCE"
+    reading = "れっどありす"
+
+[[songs]]
+  title = "Daydreama"
+  reading = "でいどりーま" # 推定
+  [songs.composer]
+    name = "HiTECH NINJA"
+    reading = "はいてっくにんじゃ"
+
+[[songs]]
+  title = "Lostwizz"
+  reading = "ろすとうぃず" # 推定
+  [songs.composer]
+    name = "s-don"
+    reading = "すうどん"
+
+[[songs]]
+  title = "Stargazing Dreamer"
+  reading = "すたーげいじんぐどりーまー"
+  [songs.composer]
+    name = "xi"
+    reading = "さい"
