@@ -115,6 +115,16 @@ updated_at = "2020-06-14T18:00:00"
     title = "逢坂茜の挑戦状"
     reading = "おうさかあかねのちょうせんじょう"
 
+  [[sections.chapters]]
+    number = 6
+    title = "ひよこたちのダ・カーポ"
+    reading = "ひよこたちのだかーぽ"
+
+  [[sections.chapters]]
+    number = 7
+    title = "仲直りのフィナーレ"
+    reading = "なかなおりのふぃなーれ"
+
   # サイドチャプターという概念が出てきたので100足して手抜き
   [[sections.chapters]]
     number = 101
@@ -156,3 +166,26 @@ updated_at = "2020-06-14T18:00:00"
     number = 202
     title = "すずしまさんちの夜ごはん"
     reading = "すずしまさんちのよるごはん"
+
+[[sections]]
+  number = 4
+
+  [[sections.chapters]]
+    number = 1
+    title = "災厄、来たる"
+    reading = "さいやくきたる"
+
+  [[sections.chapters]]
+    number = 2
+    title = "負のオンゲキ"
+    reading = "ふのおんげき"
+
+  [[sections.chapters]]
+    number = 3
+    title = "輝く、三つ星"
+    reading = "かがやくみつぼし"
+
+  [[sections.chapters]]
+    number = 4
+    title = "思い、繋がって"
+    reading = "おもいつながって"

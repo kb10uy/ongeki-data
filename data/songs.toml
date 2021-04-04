@@ -1,4 +1,4 @@
-updated_at = "2020-10-05T20:00:00"
+updated_at = "2021-04-04T18:00:00"
 
 # ONGEKI Vocal Collection シリーズ =========================================
 
@@ -8,7 +8,7 @@ updated_at = "2020-10-05T20:00:00"
   title = "STARTLINER"
   reading = "すたーとらいなー"
   [songs.composer]
-    name = "kz(livetune)"
+    name = "kz (livetune)"
     reading = "けーぜっと"
 
 [[songs]]
@@ -29,7 +29,7 @@ updated_at = "2020-10-05T20:00:00"
   title = "Zest of Blue"
   reading = "つぇすとおぶぶるー"
   [songs.composer]
-    name = "上松範廉(Elements Garden)"
+    name = "上松範廉 (Elements Garden)"
     reading = "あげまつのりやす"
 
 # ONGEKI Vocal Collection 02
@@ -75,7 +75,7 @@ updated_at = "2020-10-05T20:00:00"
   title = "SWEET SHAKE!!"
   reading = "すいーとしぇーく"
   [songs.composer]
-    name = "佐藤純一(fhána)"
+    name = "佐藤純一 (fhána)"
     reading = "さとうじゅんいち"
 
 [[songs]]
@@ -151,7 +151,7 @@ updated_at = "2020-10-05T20:00:00"
   title = "まっすぐ→→→ストリーム！"
   reading = "まっすぐすとりーむ"
   [songs.composer]
-    name = "本多友紀(Arte Refact)"
+    name = "本多友紀 (Arte Refact)"
     reading = "ほんだゆうき"
 
 [[songs]]
@@ -238,6 +238,29 @@ updated_at = "2020-10-05T20:00:00"
   [songs.composer]
     name = "Powerless"
     reading = "ぱわーれす"
+
+# ONGEKI Vocal Party 03
+
+[[songs]]
+  title = "絆はずっと Growing Up!!!"
+  reading = "きずなはずっとぐろーいんあっぷ"
+  [songs.composer]
+    name = "原田篤 (Arte Refact)"
+    reading = "はらだあつし"
+
+[[songs]]
+  title = "反撃！突撃！Back To Back!"
+  reading = "はんげきとつげきばっくとぅーばっく"
+  [songs.composer]
+    name = "菊池司 (Arte Refact)"
+    reading = "はらだあつし"
+
+[[songs]]
+  title = "YAMINABE☆PANIC ～ご馳走詰め込みフルコース～"
+  reading = "やみなべぱにっくごちそうつめこみふるこーす"
+  [songs.composer]
+    name = "飯場大志 (birdie house)"
+    reading = "いいばだいし"
 
 # ONGEKI Sound Collection シリーズ =========================================
 
@@ -528,6 +551,99 @@ updated_at = "2020-10-05T20:00:00"
     name = "Nhato"
     reading = "なはと"
 
+# ONGEKI Sound Collection 04
+
+[[songs]]
+  title = "No Limit RED Force"
+  reading = "のーりみっとれっどふぉーす"
+  [songs.composer]
+    name = "本多友紀(Arte Refact)"
+    reading = "ほんだゆうき"
+
+[[songs]]
+  title = "Sparkle"
+  reading = "すぱーくる"
+  [songs.composer]
+    name = "Maozon"
+    reading = "まおぞん"
+
+[[songs]]
+  title = "Last Kingdom"
+  reading = "らすときんぐだむ"
+  [songs.composer]
+    name = "USAO"
+    reading = "うさお"
+
+[[songs]]
+  title = "Vibes 2k20"
+  reading = "ばいぶすとぅーけーとぅうぇんてぃー" # 曲中での発音より
+  [songs.composer]
+    name = "Sound Artz"
+    reading = "さうんどあーつ"
+
+[[songs]]
+  title = "R'N'R Monsta"
+  reading = "ろっくんろーるもんすたー"
+  [songs.composer]
+    name = "Lite Show Magic"
+    reading = "らいとしょーまじっく"
+
+[[songs]]
+  title = "Ai Drew"
+  reading = "あいでゅれい"
+  [songs.composer]
+    name = "Feryquitous"
+    reading = "ふぇりきたす"
+
+[[songs]]
+  title = "DAWNBREAKER"
+  reading = "どーんぶりーかー"
+  [songs.composer]
+    name = "DJ Noriken"
+    reading = "でぃーじぇいのりけん"
+
+[[songs]]
+  title = "アマツカミ"
+  reading = "あまつかみ"
+  [songs.composer]
+    name = "a_hisa"
+    reading = "えーひさ"
+
+[[songs]]
+  title = "Galaxy Blaster"
+  reading = "ぎゃらくしーぶらすたー"
+  [songs.composer]
+    name = "ああああ"
+    reading = "ああああ"
+
+[[songs]]
+  title = "Trinity Departure"
+  reading = "とりにてぃーでぱーちゃー"
+  [songs.composer]
+    name = "Soleily"
+    reading = "それいりー" # 情報求む
+
+[[songs]]
+  title = "AstrøNotes."
+  reading = "あすとろのーつ"
+  [songs.composer]
+    name = "MisoilePunch♪"
+    reading = "みそいるぱんち"
+
+[[songs]]
+  title = "Singularity"
+  reading = "しんぎゅらりてぃ"
+  [songs.composer]
+    name = "technoplanet"
+    reading = "てくのぷらねっと"
+
+[[songs]]
+  title = "脳天直撃"
+  reading = "のうてんちょくげき"
+  [songs.composer]
+    name = "黒沢ダイスケ VS 穴山大輔"
+    reading = "くろさわだいすけばーさすあなやまだいすけ"
+
 # ONGEKI Memorial Soundtrack シリーズ ======================================
 
 # ONGEKI Memorial Soundtrack Sakura
@@ -575,6 +691,7 @@ updated_at = "2020-10-05T20:00:00"
     reading = "あなやまだいすけ"
 
 # ONGEKI Memorial Soundtrack himawari
+
 [[songs]]
   title = "スン(マイル)フラワー～Sun(Mile)Flower"
   reading = "すんまいるふらわー"
@@ -583,109 +700,53 @@ updated_at = "2020-10-05T20:00:00"
     name = "Funta"
     reading = "ふぁんた"
 
-# CD 未収録楽曲 ===========================================================
-
-# オンゲキ SUMMER PLUS
+# ONGEKI Memorial Soundtrack Momiji
 
 [[songs]]
-  title = "Last Kingdom"
-  reading = "らすときんぐだむ"
+  title = "いつか花咲くその前に"
+  reading = "いつかはなさくそのまえに"
   [songs.composer]
-    name = "USAO"
-    reading = "うさお"
+    name = "Kensuke"
+    reading = "けんすけ"
 
 [[songs]]
-  title = "Sparkle"
-  reading = "すぱーくる"
+  title = "YURUSHITE (Uncut Edition)"
+  reading = "ゆるして"
   [songs.composer]
-    name = "Maozon"
-    reading = "まおぞん"
+    name = "t+pazolite"
+    reading = "とぱぞらいと"
 
 [[songs]]
-  title = "Vibes 2k20"
-  reading = "ばいぶすとぅーけーとぅうぇんてぃー" # 曲中での発音より
+  title = "GEOMETRIC DANCE Long Ver."
+  reading = "じおめとりっくだんす"
   [songs.composer]
-    name = "Sound Artz"
-    reading = "さうんどあーつ"
+    name = "山本真央樹"
+    reading = "やまもとまおき"
 
 [[songs]]
-  title = "R'N'R Monsta"
-  reading = "ろっくんろーるもんすたー"
+  title = "ロッキンピンクモンスター (豚乙女ランコVo Ver.)"
+  reading = "ろっきんぴんくもんすたー"
   [songs.composer]
-    name = "Lite Show Magic"
-    reading = "らいとしょーまじっく"
+    name = "豚乙女"
+    reading = "ぶたおとめ"
 
 [[songs]]
-  title = "Ai Drew"
-  reading = "あいでゅれい"
+  title = "Vibes 2k20 (owl＊aging remix)"
+  reading = "ばいぶすとぅーけーとぅうぇんてぃー"
   [songs.composer]
-    name = "Feryquitous"
-    reading = "ふぇりきたす"
+    name = "owl＊tree"
+    reading = "あうるつりー"
 
 [[songs]]
-  title = "アマツカミ"
+  title = "アマツカミ Long Ver."
   reading = "あまつかみ"
   [songs.composer]
     name = "a_hisa"
     reading = "えーひさ"
 
-[[songs]]
-  title = "DAWNBREAKER"
-  reading = "どーんぶりーかー"
-  [songs.composer]
-    name = "DJ Noriken"
-    reading = "でぃーじぇいのりけん"
-
-[[songs]]
-  title = "Galaxy Blaster"
-  reading = "ぎゃらくしーぶらすたー"
-  [songs.composer]
-    name = "ああああ"
-    reading = "ああああ"
-
-[[songs]]
-  title = "Trinity Departure"
-  reading = "とりにてぃーでぱーちゃー"
-  [songs.composer]
-    name = "Soleily"
-    reading = "それいりー" # 情報求む
-
-[[songs]]
-  title = "絆はずっと Growing Up!!!"
-  reading = "きずなはずっとぐろーいんあっぷ"
-  [songs.composer]
-    name = "原田篤 (Arte Refact)"
-    reading = "はらだあつし"
-
-[[songs]]
-  title = "AstrøNotes."
-  reading = "あすとろのーつ"
-  [songs.composer]
-    name = "MisoilePunch♪"
-    reading = "みそいるぱんち"
-
-[[songs]]
-  title = "脳天直撃"
-  reading = "のうてんちょくげき"
-  [songs.composer]
-    name = "黒沢ダイスケ VS 穴山大輔"
-    reading = "くろさわだいすけばーさすあなやまだいすけ"
-
-[[songs]]
-  title = "Singularity"
-  reading = "しんぎゅらりてぃ"
-  [songs.composer]
-    name = "technoplanet"
-    reading = "てくのぷらねっと"
+# CD 未収録楽曲 ===========================================================
 
 # オンゲキ R.E.D.
-
-[[songs]]
-  title = "No Limit RED Force"
-  reading = "のーりみっとれっどふぉーす"
-  [songs.composer]
-    name = "本多友紀(Arte Refact)"
-    reading = "ほんだゆうき"
 
 [[songs]]
   title = "GlitterGlitter"
@@ -735,3 +796,117 @@ updated_at = "2020-10-05T20:00:00"
   [songs.composer]
     name = "xi"
     reading = "さい"
+
+[[songs]]
+  title = "キミは\"見ていたね\"？"
+  reading = "きみはみていたね"
+  [songs.composer]
+    name = "篠崎あやと、橘亮祐"
+    reading = "しのざきあやとたちばなりょうすけ"
+
+[[songs]]
+  title = "LiftOff"
+  reading = "りふとおふ"
+  [songs.composer]
+    name = "MAYA AKAI"
+    reading = "まやあかい"
+
+[[songs]]
+  title = "Over Voltage"
+  reading = "おーばーぼるてーじ"
+  [songs.composer]
+    name = "R・O・N"
+    reading = "ろん"
+
+[[songs]]
+  title = "FLUFFY FLASH"
+  reading = "ふらっふぃーふらっしゅ"
+  [songs.composer]
+    name = "Kobaryo"
+    reading = "こばりょー"
+
+[[songs]]
+  title = "Falsum Atlantis."
+  reading = "ふぁるすむあとらんてぃす"
+  [songs.composer]
+    name = "kanone"
+    reading = "かのね"
+
+[[songs]]
+  title = "Don't Fight The Music"
+  reading = "どんとふぁいとざみゅーじっく"
+  [songs.composer]
+    name = "黒魔"
+    reading = "くろま"
+
+[[songs]]
+  title = "Ruler Count, Zero"
+  reading = "るーらーかうんとぜろ"
+  [songs.composer]
+    name = "本多友紀 (Arte Refact)"
+    reading = "ほんだゆうき"
+
+[[songs]]
+  title = "Say Goodbye"
+  reading = "せいぐっばい"
+  [songs.composer]
+    name = "yaseta"
+    reading = "やせた"
+
+[[songs]]
+  title = "See The Light"
+  reading = "しーざらいと"
+  [songs.composer]
+    name = "anubasu-anubasu"
+    reading = "あぬばすあぬばす"
+
+[[songs]]
+  title = "美夜月鏡"
+  reading = "みやげっきょう"
+  [songs.composer]
+    name = "かゆき"
+    reading = "かゆき"
+
+# オンゲキ R.E.D. PLUS
+
+[[songs]]
+  title = "STARRED HEART"
+  reading = "すたーどはーと"
+  [songs.composer]
+    name = "広川恵一 (MONACA)"
+    reading = "ひろかわけいいち"
+
+[[songs]]
+  title = "最っ高のエンタメだ！！"
+  reading = "さいっこうのえんためだ"
+  [songs.composer]
+    name = "本田正樹 (Dream Monster)"
+    reading = "ほんだまさき"
+
+[[songs]]
+  title = "Random Access Emotions"
+  reading = "らんだむあくせすえもーしょんず"
+  [songs.composer]
+    name = "aran"
+    reading = "あらん"
+
+[[songs]]
+  title = "A Day in the Patisserie"
+  reading = "あでいいんざぱてぃすりー"
+  [songs.composer]
+    name = "kamome sano"
+    reading = "かもめさの"
+
+[[songs]]
+  title = "Daredevil Glaive"
+  reading = "であでびるぐれいぶ"
+  [songs.composer]
+    name = "Artifact"
+    reading = "あーてぃふぁくと"
+
+[[songs]]
+  title = "Adverse Gaff"
+  reading = "あどばーすがふ"
+  [songs.composer]
+    name = "siromaru"
+    reading = "しろまる"
