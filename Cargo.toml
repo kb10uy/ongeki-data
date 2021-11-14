@@ -1,8 +1,8 @@
 [package]
 name = "ongeki-data"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["kb10uy <kb10uy@kb10uy.org>"]
-edition = "2018"
+edition = "2021"
 
 [[bin]]
 name = "emit-dictionary"
@@ -17,13 +17,13 @@ path = "./src/lib.rs"
 version = "0.4.14"
 
 [dependencies.env_logger]
-version = "0.7.0"
+version = "0.9.0"
 
-[dependencies.clap]
-version = "2.33"
+[dependencies.structopt]
+version = "0.3.25"
 
 [dependencies.serde]
-version = "1.0.125"
+version = "1.0.130"
 features = ["derive"]
 
 [dependencies.toml]

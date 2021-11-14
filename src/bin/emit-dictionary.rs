@@ -1,99 +1,67 @@
-use clap::{App, Arg, ArgMatches};
 use env_logger;
-use std::error::Error;
 use log::info;
+use std::error::Error;
 use std::{
     fs::File,
     io::{stdout, Write},
 };
+use structopt::StructOpt;
 
 use ongeki_data::{
     AtokDictionaryEntry, CharactersDefinition, EmitDictionary, GeneralDefinition,
     MsimeDictionaryEntry, SkkDictionaryEntry, SongsDefinition,
 };
 
+/// オンゲキ SKK 辞書生成ツール
+#[derive(StructOpt)]
+struct Arguments {
+    /// 出力する辞書の形式を指定 (skk, msime, atok)
+    #[structopt(short = "t", long)]
+    dictionary_type: String,
+
+    /// characters.toml の位置を指定
+    #[structopt(short, long, default_value = "./data/characters.toml")]
+    character_definitions: String,
+
+    /// songs.toml の位置を指定
+    #[structopt(short, long, default_value = "./data/songs.toml")]
+    song_definitions: String,
+
+    /// general.toml の位置を指定
+    #[structopt(short, long, default_value = "./data/general.toml")]
+    general_definitions: String,
+
+    /// 出力先
+    #[structopt(default_value = "-")]
+    output: String,
+}
+
 fn main() -> Result<(), Box<dyn Error>> {
     env_logger::init();
 
-    let app = App::new("オンゲキ SKK 辞書生成ツール")
-        .version(env!("CARGO_PKG_VERSION"))
-        .author(env!("CARGO_PKG_AUTHORS"))
-        .about(
-            "TOML 形式の定義ファイルから SKK 用の辞書ファイルを生成します",
-        )
-        .arg(
-            Arg::with_name("OUTPUT")
-                .help("出力先")
-                .required(true)
-                .index(1)
-                .default_value("-"),
-        )
-        .arg(
-            Arg::with_name("dictionary-type")
-                .short("t")
-                .long("type")
-                .help("出力する辞書の形式を指定 (skk, msime, atok)")
-                .required(true)
-                .takes_value(true)
-                .value_name("TYPE"),
-        )
-        .arg(
-            Arg::with_name("character-definitions")
-                .short("c")
-                .long("characters")
-                .help("characters.toml の位置を指定")
-                .takes_value(true)
-                .value_name("FILE")
-                .default_value("./data/characters.toml"),
-        )
-        .arg(
-            Arg::with_name("song-definitions")
-                .short("s")
-                .long("songs")
-                .help("songs.toml の位置を指定")
-                .takes_value(true)
-                .value_name("FILE")
-                .default_value("./data/songs.toml"),
-        )
-        .arg(
-            Arg::with_name("general-definitions")
-                .short("g")
-                .long("general")
-                .help("general.toml の位置を指定")
-                .takes_value(true)
-                .value_name("FILE")
-                .default_value("./data/general.toml"),
-        );
-    let matches = app.get_matches();
+    let args = Arguments::from_args();
 
-    run(&matches)
+    run(args)
 }
 
-fn run(matches: &ArgMatches) -> Result<(), Box<dyn Error>> {
-    // 引数
-    let output_name = matches.value_of("OUTPUT").unwrap();
-    let output_type = matches.value_of("dictionary-type").unwrap();
-    let generals_filename = matches.value_of("general-definitions").unwrap();
-    let characters_filename = matches.value_of("character-definitions").unwrap();
-    let songs_filename = matches.value_of("song-definitions").unwrap();
-
+fn run(args: Arguments) -> Result<(), Box<dyn Error>> {
     // 定義読み込み/表示
-    let generals = ongeki_data::load_general_definitions(generals_filename)?;
-    let characters = ongeki_data::load_character_definitions(characters_filename)?;
-    let songs = ongeki_data::load_song_definitions(songs_filename)?;
+    let generals = ongeki_data::load_general_definitions(&args.general_definitions)?;
+    let characters = ongeki_data::load_character_definitions(&args.character_definitions)?;
+    let songs = ongeki_data::load_song_definitions(&args.song_definitions)?;
     let entries = ongeki_data::generate_entries(&generals, &characters, &songs);
     log_information(&generals, &characters, &songs)?;
 
     let (mut file, mut stdo);
-    let output: &mut dyn Write = if output_name == "-" {
+    let output: &mut dyn Write = if args.output == "-" {
         stdo = stdout();
         &mut stdo
     } else {
-        file = File::create(output_name)?;
+        file = File::create(args.output)?;
         &mut file
     };
 
-    match output_type {
+    match args.dictionary_type.as_ref() {
         "skk" => {
             let skk_entries = SkkDictionaryEntry::emit(&entries);
             write!(output, ";; -*- fundamental -*- ; coding: utf-8 -*-\n")?;
@@ -134,7 +102,7 @@ fn run(matches: &ArgMatches) -> Result<(), Box<dyn Error>> {
             }
         }
         _ => {
-            panic!("Invalid type: {}", output_type);
+            panic!("Invalid type: {}", args.dictionary_type);
         }
     }
 
