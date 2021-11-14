@@ -192,3 +192,7 @@ updated_at = "2020-06-14T18:00:00"
 
 [[sections]]
   number = 5
+  [[sections.chapters]]
+    number = 1
+    title = "オンゲキ bright"
+    reading = "おんげきぶらいと"
