@@ -1,4 +1,4 @@
-updated_at = "2019-10-05T20:00:00"
+updated_at = "2021-11-14T18:00:00"
 
 [[units]]
 name = "ASTERISM"
@@ -24,6 +24,9 @@ reading = "あーるびーぴー"
 name = "マーチングポケッツ"
 reading = "まーちんぐぽけっつ"
 
+[[units]]
+name = "刹那"
+reading = "せつな"
 
 [[characters]]
   name = ["星咲", "あかり"]
